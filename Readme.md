@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Рудковский](https://up.htmlacademy.ru/adaptive/21/user/899487).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Мамаев](https://htmlacademy.ru/profile/id888525).
 
 ---
 
