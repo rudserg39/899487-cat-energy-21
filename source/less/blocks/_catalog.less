@@ -1,0 +1,26 @@
+.catalog__item {
+  background-color: @grey;
+}
+
+.catalog__title {
+  .font-params(24px, 37px);
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  font-family: "Arial", sans-serif;
+  .font-params(14px, 18px);
+  color: #444444;
+}
+
+.catalog__button {
+  .font-params(16px, 16px);
+  color: @black;
+
+  &:active {
+    color: @grey-active;
+  }
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
