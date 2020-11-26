@@ -1,0 +1,26 @@
+.program__item {
+  background-color: @grey;
+}
+
+.program__title {
+  .font-params(24px, 37px);
+  text-transform: uppercase;
+}
+
+.program__text {
+  font-family: "Arial", sans-serif;
+  .font-params(14px, 18px);
+  color: #444444;
+}
+
+.program__button {
+  .font-params(16px, 16px);
+  color: @black;
+
+  &:active {
+    color: @grey-active;
+  }
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
