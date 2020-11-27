@@ -1,26 +1,20 @@
-.catalog__item {
-  background-color: @grey;
+.catalog__title {
+  .font-params(36px, 36px);
 }
 
-.catalog__title {
-  .font-params(24px, 37px);
+.catalog__table-caption,
+.catalog__subtitle,
+.catalog__button {
+  .font-params(16px, 20px);
   text-transform: uppercase;
 }
 
-.catalog__text {
+.catalog__table-data,
+.catalog__subtitle-description {
   font-family: "Arial", sans-serif;
-  .font-params(14px, 18px);
-  color: #444444;
+  .font-params(12px, 16px);
 }
 
 .catalog__button {
-  .font-params(16px, 16px);
-  color: @black;
-
-  &:active {
-    color: @grey-active;
-  }
-
   text-decoration: none;
-  text-transform: uppercase;
 }
