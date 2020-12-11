@@ -1,13 +1,62 @@
-.description__img {
-  background-color: @green;
+.description__wrapper {
+  .centering(280px);
+  padding-bottom: 22px;
 }
 
 .description__title {
+  margin-top: 29px;
   .font-params(36px, 40px);
+  font-weight: 400;
+}
+
+.description__list {
+  margin-top: 38px;
+}
+
+.description__item {
+  display: flex;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.description__icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: @green;
+}
+
+.description__icon::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.description__icon_leaf::before {
+  background-image: url("../../img/icon-leaf.png");
+}
+
+.description__icon_water::before {
+  background-image: url("../../img/icon-water.png");
+}
+
+.description__icon_meal::before {
+  background-image: url("../../img/icon-meal.png");
+}
+
+.description__icon_time::before {
+  background-image: url("../../img/icon-time.png");
 }
 
 .description__text {
+  width: 200px;
+  margin-left: 19px;
   font-family: "Arial", sans-serif;
   .font-params(14px, 18px);
-  color: #444444;
+  color: @grey-text;
 }

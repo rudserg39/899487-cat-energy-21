@@ -1,19 +1,42 @@
+.program__wrapper {
+  padding-top: 36px;
+}
+
 .program__item {
+  .centering(280px);
+  margin-bottom: 20px;
   background-color: @grey;
 }
 
+.program__item-wrapper {
+  .centering(240px);
+  padding-top: 21px;
+}
+
+.program__title-wrapper {
+  display: flex;
+}
+
 .program__title {
-  .font-params(24px, 37px);
+  margin-left: 21px;
+  .font-params(24px, 53px);
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .program__text {
+  padding-top: 22px;
+  padding-bottom: 22px;
   font-family: "Arial", sans-serif;
   .font-params(14px, 18px);
-  color: #444444;
+  color: @grey-text;
+  border-bottom: 1px solid @grey-border;
 }
 
 .program__button {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   .font-params(16px, 16px);
   color: @black;
 

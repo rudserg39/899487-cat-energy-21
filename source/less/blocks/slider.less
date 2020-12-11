@@ -1,4 +1,47 @@
+.slider__img-wrapper {
+  position: relative;
+  margin-top: 42px;
+}
+
+.slider__img {
+  position: absolute;
+  left: -20px;
+}
+
+.slider__control {
+  .centering(280px);
+  padding: 263px 0 0 0;
+  text-align: center;
+}
+
 .slider__label {
+  display: flex;
+  justify-content: space-between;
+  .centering(200px);
+  align-items: center;
   .font-params(16px, 20px);
   text-transform: uppercase;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__toggle {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 14px;
+  box-shadow: inset 0 0 0 1px @grey-frame;
+  border-radius: 6px;
+  background-color: @white;
+}
+
+.slider__toggle-mark {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  padding: 3px 17.5px;
+  border-radius: 6px;
+  background-color: @green;
 }

@@ -1,0 +1,34 @@
+.social {
+  .centering(280px);
+  border-top: 1px solid @grey-border;
+  border-bottom: 1px solid @grey-border;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 126px;
+  margin-left: 73px;
+  padding-top: 21px;
+  padding-bottom: 16px;
+}
+
+.social__item {
+  list-style-type: none;
+}
+
+.social__link {
+  display: none;
+}
+
+.social__item_vk::before {
+  content: url("../../img/vk-icon.png");
+}
+
+.social__item_facebook::before {
+  content: url("../../img/facebook-icon.png");
+}
+
+.social__item_instagram::before {
+  content: url("../../img/instagram-icon.png");
+}

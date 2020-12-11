@@ -2,18 +2,69 @@
   background-color: @grey;
 }
 
+.example__wrapper {
+  .centering(280px);
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
 .example__title {
   .font-params(36px, 40px);
+  font-weight: 400;
 }
 
 .example__text,
 .example__description {
   font-family: "Arial", sans-serif;
+  color: @grey-text;
+}
+
+.example__text {
+  width: 279px;
+  margin-top: 33px;
   .font-params(14px, 18px);
-  color: #444444;
+}
+
+.example__list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.example__item {
+  position: relative;
 }
 
 .example__case {
+  display: inline-block;
+  width: 98px;
+  padding: 15px 12px;
+  border: 1px solid @grey-frame;
+  border-radius: 3px;
   .font-params(24px, 24px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  .centering(82px);
+  margin-top: -10px;
+  background-color: @grey;
+  .font-params(12px, 13px);
+  text-align: center;
+}
+
+.example__item-frameless {
+  margin-top: 34px;
+  text-align: center;
+}
+
+.example__description-frameless {
+  .font-params(14px, 20px);
+  font-weight: 400;
   text-transform: uppercase;
 }

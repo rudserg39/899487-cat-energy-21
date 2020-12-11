@@ -1,20 +1,59 @@
-.offer {
+.offer__wrapper {
+  position: relative;
+  padding-bottom: 466px;
+  background-image: url("../../img/index-background-mobile.png");
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.offer__background-color {
+  position: absolute;
+  width: 320px;
+  height: 302px;
   background-color: @green;
+  z-index: 1;
+  opacity: 0.8;
 }
 
 .offer__title {
+  position: absolute;
+  top: 27px;
+  text-align: center;
   .font-params(36px, 36px);
   color: @white;
+  font-weight: 400;
+  z-index: 1;
 }
 
 .offer__text {
+  position: absolute;
+  top: 124px;
+  width: 320px;
+  text-align: center;
   .font-params(14px, 14px);
   color: @white;
   text-transform: uppercase;
+  z-index: 1;
+}
+
+.offer__img {
+  position: absolute;
+  top: 166px;
+  left: 20px;
+  z-index: 1;
 }
 
 .offer__button {
+  position: absolute;
+  top: 440px;
+  left: 20px;
+  display: inline-block;
+  width: 280px;
+  margin: auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
   .font-params(14px, 18px);
+  text-align: center;
   background-color: @green;
 
   &:hover {

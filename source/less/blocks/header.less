@@ -1,0 +1,37 @@
+.header__wrapper {
+  display: flex;
+  .centering(280px);
+  padding: 11px 12px;
+}
+
+.header__logo-text {
+  display: flex;
+  margin: auto;
+  margin-right: 65px;
+}
+
+.header__burger-menu {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.header__burger-dash {
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+}
+
+.header__burger-dash:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.header__nav-list {
+  display: none;
+}
+
+.header__nav-item {
+  .font-params(18px, 24px);
+  text-transform: uppercase;
+}
