@@ -1,18 +1,30 @@
 .offer__wrapper {
   position: relative;
-  padding-bottom: 466px;
+  padding-bottom: 165px;
   background-image: url("../../img/index-background-mobile.png");
   background-repeat: no-repeat;
   z-index: 0;
 }
 
-.offer__background-color {
-  position: absolute;
-  width: 320px;
-  height: 302px;
-  background-color: @green;
-  z-index: 1;
-  opacity: 0.8;
+.offer__background {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(@green, 0.8);
+  }
+}
+
+.offer__background-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .offer__title {

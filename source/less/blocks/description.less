@@ -10,52 +10,52 @@
 }
 
 .description__list {
+  display: flex;
+  flex-flow: column;
   margin-top: 38px;
 }
 
 .description__item {
-  display: flex;
-  margin-bottom: 20px;
-  list-style-type: none;
-}
-
-.description__icon {
   position: relative;
+  display: inline-block;
   width: 60px;
   height: 60px;
+  margin-bottom: 20px;
+  list-style-type: none;
   background-color: @green;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.description__icon::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  background-repeat: no-repeat;
-  background-position: center;
+
+.description__item_leaf::before {
+  background-image: url("../../img/leaf-icon.svg");
 }
 
-.description__icon_leaf::before {
-  background-image: url("../../img/icon-leaf.png");
+.description__item_water::before {
+  background-image: url("../../img/water-icon.svg");
 }
 
-.description__icon_water::before {
-  background-image: url("../../img/icon-water.png");
+.description__item_meal::before {
+  background-image: url("../../img/meal-icon.svg");
 }
 
-.description__icon_meal::before {
-  background-image: url("../../img/icon-meal.png");
-}
-
-.description__icon_time::before {
-  background-image: url("../../img/icon-time.png");
+.description__item_time::before {
+  background-image: url("../../img/time-icon.svg");
 }
 
 .description__text {
   width: 200px;
-  margin-left: 19px;
+  margin-left: 80px;
   font-family: "Arial", sans-serif;
   .font-params(14px, 18px);
   color: @grey-text;
