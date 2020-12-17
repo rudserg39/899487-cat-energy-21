@@ -1,16 +1,13 @@
 .offer__wrapper {
   position: relative;
   padding-bottom: 165px;
-  background-image: url("../../img/index-background-mobile.png");
-  background-repeat: no-repeat;
-  z-index: 0;
 }
 
 .offer__background {
   position: relative;
-  
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -23,8 +20,6 @@
 
 .offer__background-img {
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 .offer__title {
@@ -33,26 +28,26 @@
   text-align: center;
   .font-params(36px, 36px);
   color: @white;
-  font-weight: 400;
-  z-index: 1;
 }
 
 .offer__text {
   position: absolute;
   top: 124px;
-  width: 320px;
+  width: @mobile-width;
   text-align: center;
   .font-params(14px, 14px);
-  color: @white;
   text-transform: uppercase;
-  z-index: 1;
+  color: @white;
 }
 
 .offer__img {
   position: absolute;
   top: 166px;
   left: 20px;
-  z-index: 1;
+}
+
+.offer__img_tablet {
+  display: none;
 }
 
 .offer__button {
@@ -60,13 +55,14 @@
   top: 440px;
   left: 20px;
   display: inline-block;
-  width: 280px;
-  margin: auto;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  .centering(280px);
+  padding: 11px 0 11px 0;
   .font-params(14px, 18px);
-  text-align: center;
   background-color: @green;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @white;
 
   &:hover {
     background-color: @green-hover;
@@ -75,7 +71,60 @@
   &:active {
     opacity: 0.5;
   }
-  color: @white;
-  text-decoration: none;
-  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .offer__wrapper {
+    position: relative;
+    padding-bottom: 615px;
+  }
+
+  .offer__background-img {
+    display: none;
+  }
+
+  .offer__title-wrapper {
+    .centering(523px);
+  }
+
+  .offer__title {
+    position: inherit;
+    display: inline-block;
+    width: 431px;
+    margin-top: 43px;
+    .font-params(60px, 62px);
+    text-align: start;
+    letter-spacing: 1px;
+    color: @black;
+  }
+
+  .offer__text {
+    position: inherit;
+    display: inline-block;
+    margin-top: 43px;
+    .font-params(20px, 20px);
+    text-align: start;
+    letter-spacing: 0.4px;
+    color: @black;
+  }
+
+  .offer__img_mobile {
+    display: none;
+  }
+
+  .offer__img_tablet {
+    top: 255px;
+    left: 41px;
+    display: block;
+  }
+
+  .offer__button {
+    width: 253px;
+    top: 282px;
+    left: 117px;
+    .font-params(20px, 20px);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    letter-spacing: 0.4px;
+  }
 }

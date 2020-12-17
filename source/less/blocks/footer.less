@@ -3,13 +3,20 @@
 }
 
 .footer__logo {
-  padding-top: 39px;
-  padding-bottom: 26px;
+  padding: 39px 0 26px 0;
   text-align: center;
 }
 
-.developer__name {
-  font-family: "Arial", sans-serif;
-  .font-params(16px, 18.4px);
-  color: @grey-text;
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .centering(768px);
+    padding: 72px 0 60px 0;
+  }
+
+  .footer__logo {
+    margin: 8px 0  0 32px;
+    padding: 0;
+  }
 }

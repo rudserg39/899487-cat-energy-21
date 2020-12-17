@@ -1,13 +1,16 @@
 .header__wrapper {
   display: flex;
   .centering(280px);
-  padding: 11px 12px;
+  padding: 11px 0;
 }
 
 .header__logo-text {
   display: flex;
-  margin: auto;
-  margin-right: 65px;
+  margin: 0 65px 0 56px;
+}
+
+.header__logo-img_tablet {
+  display: none;
 }
 
 .header__burger-menu {
@@ -19,21 +22,62 @@
 }
 
 .header__burger-dash {
+  display: inline-block;
   width: 24px;
   height: 2px;
-  background-color: black;
-  display: inline-block;
+  background-color: @black;
 }
 
 .header__burger-dash:not(:last-child) {
   margin-bottom: 6px;
 }
 
-.header__nav-list {
+.header__nav-panel {
   display: none;
 }
 
-.header__nav-item {
-  .font-params(18px, 24px);
-  text-transform: uppercase;
+@media (min-width: @tablet-width) {
+  .header__logo-img_mobile,
+  .header__logo-text,
+  .header__burger-menu {
+    display: none;
+  }
+
+  .header__wrapper {
+    justify-content: space-between;
+    width: @tablet-width;
+    .centering(@tablet-width);
+    padding: 26px 0;
+  }
+
+  .header__logo {
+    margin-left: 33px;
+  }
+
+  .header__logo-img_tablet {
+    display: block;
+  }
+
+  .header__nav-panel {
+    display: block;
+    width: 456px;
+  }
+
+  .header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+  }
+
+  .header__nav-item {
+    .font-params(18px, 24px);
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+
+  .header__nav-link {
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    color: @black;
+  }
 }

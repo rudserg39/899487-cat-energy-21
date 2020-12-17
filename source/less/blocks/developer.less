@@ -3,6 +3,24 @@
   justify-content: space-between;
   align-items: center;
   .centering(280px);
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 19px 0 20px 0;
+}
+
+.developer__name {
+  font-family: "Arial", sans-serif;
+  .font-params(16px, 18.4px);
+  color: @grey-text;
+}
+
+@media (min-width: @tablet-width) {
+  .developer {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .developer__name {
+    .font-params(16px, 18px);
+    letter-spacing: 0.4px;
+  }
 }

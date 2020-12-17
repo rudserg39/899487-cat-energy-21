@@ -1,36 +1,44 @@
-.slider__img-wrapper {
+.slider {
   position: relative;
-  margin-top: 42px;
+  height: 329px;
 }
 
 .slider__img {
   position: absolute;
+}
+
+.slider__img-mobile {
+  top: 42px;
   left: -20px;
 }
 
+.slider__img-desktop {
+  display: none;
+}
+
 .slider__control {
+  position: absolute;
+  bottom: 3px;
+  left: 2px;
   .centering(280px);
-  padding: 263px 0 0 0;
-  text-align: center;
 }
 
 .slider__label {
   display: flex;
   justify-content: space-between;
-  .centering(200px);
-  align-items: center;
+  .centering(196px);
   .font-params(16px, 20px);
   text-transform: uppercase;
 }
 
-.slider__input {
-  display: none;
+.slider__toggle-wrapper {
+  margin: auto;
 }
 
 .slider__toggle {
   position: relative;
   display: inline-block;
-  width: 84px;
+  width: 85px;
   height: 14px;
   box-shadow: inset 0 0 0 1px @grey-frame;
   border-radius: 6px;
@@ -39,9 +47,84 @@
 
 .slider__toggle-mark {
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 4px;
+  left: 6px;
   padding: 3px 17.5px;
   border-radius: 6px;
   background-color: @green;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__scale-wrapper {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    height: 747px;
+  }
+
+  .slider__img-mobile {
+    display: none;
+  }
+
+  .slider__img-desktop {
+    top: 108px;
+    left: 36px;
+    display: block;
+  }
+
+  .slider__control {
+    bottom: 73px;
+    left: 73px;
+    width: 595px;
+  }
+
+  .slider__label {
+    width: 595px;
+  }
+
+  .slider__before,
+  .slider__after {
+    .font-params(20px, 29px);
+    border-bottom: 1px dotted @grey-border;
+  }
+
+  .slider__toggle-wrapper {
+    display: none;
+  }
+
+  .slider__scale-wrapper {
+    display: block;
+  }
+
+  .slider__scale {
+    position: relative;
+    display: inline-block;
+    width: 448px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 6px;
+  }
+
+  .slider__scale-mark {
+    position: absolute;
+    top: -13px;
+    left: 209px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: @white;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  .slider__scale-dot {
+    display: block;
+    padding: 4px;
+    background-color: @green;
+    border-radius: 50%;
+  }
 }

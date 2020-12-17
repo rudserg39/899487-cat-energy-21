@@ -1,8 +1,7 @@
 .contacts__address {
   display: flex;
   .centering(280px);
-  padding-top: 33px;
-  padding-bottom: 25px;
+  padding: 27px 0;
 }
 
 .contacts__title {
@@ -17,4 +16,29 @@
   .font-params(14px, 20px);
   color: @grey-text;
   font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__address {
+    padding: 36px 0 60px 0;
+    .centering(618px);
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    width: 160px;
+    .font-params(20px, 25px);
+    letter-spacing: 0.3px;
+  }
+
+  .contacts__description {
+    width: 155px;
+    .font-params(16px, 20px);
+    text-align: end;
+  }
+
+  .contacts__description-city {
+    display: inline-block;
+    margin-top: 20px;
+  }
 }

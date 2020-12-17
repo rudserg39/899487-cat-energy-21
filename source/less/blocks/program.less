@@ -1,49 +1,118 @@
 .program__wrapper {
-  padding-top: 36px;
+  margin-top: 36px;
 }
 
 .program__item {
+  position: relative;
   .centering(280px);
-  margin-bottom: 20px;
+  padding: 21px 0 16px 0;
   background-color: @grey;
 }
 
-.program__item-wrapper {
-  .centering(240px);
-  padding-top: 21px;
+.program__item:nth-child(2) {
+  margin: 20px 0 0 20px;
 }
 
-.program__title-wrapper {
-  display: flex;
+.program__img {
+  position: absolute;
+}
+
+.program__item:first-child .program__img {
+  top: 21px;
+  left: 22px;
+}
+
+.program__item:nth-child(2) .program__img {
+  top: 25px;
+  left: 13px;
+}
+
+.program__item-wrapper {
+  margin-left: 20px;
 }
 
 .program__title {
-  margin-left: 21px;
+  margin-left: 71px;
   .font-params(24px, 53px);
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .program__text {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  width: 240px;
+  padding: 22px 0;
   font-family: "Arial", sans-serif;
   .font-params(14px, 18px);
-  color: @grey-text;
   border-bottom: 1px solid @grey-border;
+  color: @grey-text;
 }
 
 .program__button {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: inline-block;
+  margin-top: 20px;
   .font-params(16px, 16px);
+  text-decoration: none;
+  text-transform: uppercase;
   color: @black;
 
   &:active {
     color: @grey-active;
   }
+}
 
-  text-decoration: none;
-  text-transform: uppercase;
+@media (min-width: @tablet-width) {
+  .program__item {
+    .centering(708px);
+    padding: 81px 0 60px 0;
+  }
+
+  .program__item:nth-child(2) {
+    margin: 31px 0 0 31px;
+  }
+
+  .program__item:first-child .program__img {
+    top: 85px;
+    right: 19px;
+    left: unset;
+    width: 240px;
+    height: 212px;
+  }
+
+  .program__item:nth-child(2) .program__img {
+    top: 92px;
+    right: 0;
+    left: unset;
+    width: 280px;
+    height: 212px;
+  }
+
+  .program__item-wrapper {
+    width: 390px;
+    margin-left: 55px;
+    padding-top: 0;
+  }
+
+  .program__title {
+    margin-left: 0;
+    .font-params(36px, 36px);
+    letter-spacing: 1px;
+  }
+
+  .program__text {
+    width: 356px;
+    padding-top: 29px;
+    .font-params(16px, 24px);
+    letter-spacing: 0.3px;
+    border-bottom: none;
+  }
+
+  .program__item:first-child .program__text {
+    width: 386px;
+  }
+
+  .program__button {
+    margin: 0;
+    margin-top: 34px;
+    .font-params(20px, 29.6px);
+    letter-spacing: 0.4px;
+  }
 }
