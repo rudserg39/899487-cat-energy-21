@@ -1,26 +1,20 @@
-// TODO: Здесь должны быть только стили по тегам
-// TODO: Задать по умолчанию для всей страницы параметры текста, а именно размер, высоту и цвет шрифта (самый повторяющийся)
-
-// TODO: Лучше так не делать, убрать
-* {
-  margin: 0;
-  padding: 0;
-}
-
-// TODO: Какой-то не полный visually-hidden, найти в интернете
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .page {
   width: 320px;
   margin: auto;
-  // TODO: Шрифты вынести в переменные
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: @oswald, @arial, sans-serif;
+  .font-paramas(14px, 18px);
+  color: @black;
 }
 
 @media (min-width: @tablet-width) {

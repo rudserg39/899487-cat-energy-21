@@ -1,23 +1,28 @@
 .description__wrapper {
   .centering(280px);
-  padding: 29px 0 22px 0;
+  padding: 29px 0 33px 0;
 }
 
 .description__title {
+  margin: 0 0 38px 0;
   .font-params(36px, 40px);
 }
 
 .description__list {
   display: flex;
   flex-flow: column;
-  padding-top: 38px;
+  margin: 0;
+  padding: 0;
 }
 
 .description__item {
   position: relative;
   width: 290px;
-  margin-bottom: 15px;
   list-style-type: none;
+}
+
+.description__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .description__icon-wrapper {
@@ -29,20 +34,38 @@
   background-color: @green;
 }
 
-.description__icon {
+.description__icon-wrapper::before {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description__item_leaf .description__icon-wrapper::before {
+  background-image: url("../../img/leaf-icon.svg");
+}
+
+.description__item_water .description__icon-wrapper::before {
+  background-image: url("../../img/water-icon.svg");
+}
+
+.description__item_meal .description__icon-wrapper::before {
+  background-image: url("../../img/meal-icon.svg");
+}
+
+.description__item_time .description__icon-wrapper::before {
+  background-image: url("../../img/time-icon.svg");
 }
 
 .description__text {
   display: inline-block;
   width: 200px;
   margin-top: 2px;
-  font-family: "Arial", sans-serif;
+  font-family: @arial, sans-serif;
   .font-params(14px, 18px);
   vertical-align: top;
   color: @grey-text;
