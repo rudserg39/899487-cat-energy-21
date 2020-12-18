@@ -4,13 +4,11 @@
 
 .program__item {
   position: relative;
-  .centering(280px);
-  padding: 21px 0 16px 0;
   background-color: @grey;
 }
 
-.program__item:nth-child(2) {
-  margin: 21px 0 0 20px;
+.program__item:not(:last-child) {
+  margin-bottom: 17px;
 }
 
 .program__item::before {
@@ -20,7 +18,7 @@
 }
 
 .program__item:first-child::before {
-  top: 20px;
+  top: 21px;
   left: 22px;
   width: 51px;
   height: 55px;
@@ -36,7 +34,7 @@
 }
 
 .program__item-wrapper {
-  margin-left: 20px;
+  padding: 22px 20px;
 }
 
 .program__title {
