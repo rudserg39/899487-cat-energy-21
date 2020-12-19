@@ -66,7 +66,7 @@
     height: 683px;
     background-color: @white;
   }
-  
+
   .slider__picture-wrapper {
     position: absolute;
     top: 221px;
@@ -74,12 +74,12 @@
     width: 768px;
     background-color: @grey-background;
   }
-  
+
   .slider__img {
     top: -172px;
     left: 46px;
   }
-  
+
   .slider__control-wrapper {
     bottom: 69px;
     left: 98px;
@@ -98,7 +98,7 @@
     border: none;
     border-bottom: 1px dotted @black;
   }
-  
+
   .slider__after {
     margin-right: 13px;
   }
@@ -137,5 +137,11 @@
     padding: 4px;
     background-color: @green;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider {
+    display: none;
   }
 }

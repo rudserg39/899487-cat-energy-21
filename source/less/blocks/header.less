@@ -24,7 +24,7 @@
   .header__burger-menu {
     display: none;
   }
-  
+
   .header__container {
     justify-content: space-between;
     padding-top: 23px;
@@ -55,7 +55,22 @@
 
   .header__nav-link {
     text-decoration: none;
-    letter-spacing: 0.3px;
     color: @black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__container {
+    justify-content: space-between;
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
+
+  .header__nav-panel {
+    width: 480px;
+  }
+
+  .header__nav-link {
+    .font-params(20px, 29px);
   }
 }

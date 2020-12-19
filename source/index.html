@@ -12,6 +12,7 @@
       <div class="header__container container">
         <div class="logo header__logo">
           <picture class="header__picture">
+            <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
             <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
             <img class="header__img" src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
           </picture>
@@ -34,19 +35,17 @@
     
     <main>
       <section class="offer">
-        <div class="offer__wrapper">
-          <!-- <div class="offer__background">
-            <img class="offer__background-img" src="./img/index-background-mobile.png" alt="Изображение животного">
-          </div> -->
-          <div class="offer__title-wrapper">
+        <div class="offer__container container">
+          <div class="offer__text-wrapper">
             <h1 class="offer__title">Функциональное питание для котов</h1>
             <p class="offer__text">Занялся собой? Займись котом!</p>
           </div>
           <picture class="offer__picture">
+            <source srcset="./img/product-desktop.png" media="(min-width: 1440px)">
             <source srcset="./img/product-tablet.png" media="(min-width: 768px)">
             <img class="offer__img" src="./img/product-mobile.png" alt="Изображение товара">
           </picture>
-          <a class="offer__button" href="form.html">Подобрать программу</a>
+          <a class="offer__button" href="form.html">Подобрать программу</a> 
         </div>
       </section>
       
@@ -120,6 +119,7 @@
       </section>
       
       <section class="slider">
+        <h2 class="visually-hidden">Слайдер</h2>
         <div class="slider__picture-wrapper">
           <picture class="slider__picture">
             <source srcset="./img/slider-img-before-tablet.png" media="(min-width: 768px)">
@@ -146,12 +146,14 @@
           </div>
         </div>
       </section>
-      
+
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__container container">
-          <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
-          <address class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span class="contacts__description-city">Санкт-Петербург</span></address>
+        <div class="contacts__wrapper">
+          <div class="contacts__container container">
+            <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
+            <address class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span class="contacts__description-city">Санкт-Петербург</span></address>
+          </div>
         </div>
         <div class="map"></div>
       </section>
@@ -173,7 +175,6 @@
           <p class="developer__name">HTML Academy</p>
           <a class="developer__link" href="#"><img src="./img/htmlacademy-icon.svg" alt="Логотип HTML Academy"></a>
         </div>
-     
       </div>
     </footer>
 

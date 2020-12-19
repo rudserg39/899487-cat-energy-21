@@ -116,7 +116,7 @@
     .font-params(14px, 14px);
     background-color: @white;
   }
-  
+
   .example__item:nth-child(2) .example__description {
     width: 139px;
   }
@@ -132,5 +132,35 @@
   .example__description_frameless {
     .font-params(20px, 20px);
     line-height: 1.5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__container {
+    display: inline-block;
+    width: 450px;
+    padding-top: 24px;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+
+  .example__title {
+    margin-bottom: 148px;
+  }
+
+  .example__text {
+    width: 431px;
+    margin-bottom: 67px;
+  }
+
+  .example__list-wrapper {
+    margin-bottom: 34px;
+  }
+
+  .example__item_frameless {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin-top: 0;
   }
 }

@@ -88,7 +88,7 @@
     flex-wrap: wrap;
     width: 673px;
   }
- 
+
   .description__list .description__item {
     width: 290px;
     margin-top: 33px;
@@ -123,5 +123,25 @@
     width: 260px;
     .font-params(16px, 25px);
     margin: 29px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__container {
+    padding-top: 70px;
+    border-bottom: none;
+  }
+
+  .description__title {
+    margin-bottom: 72px;
+  }
+
+  .description__list {
+    width: 1220px;
+  }
+
+  .description__list .description__item {
+    width: 244px;
+    margin-top: 0;
   }
 }
