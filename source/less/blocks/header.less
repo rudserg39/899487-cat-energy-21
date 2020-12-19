@@ -1,6 +1,7 @@
-.header__wrapper {
+.header__container {
   display: flex;
-  padding: 11px 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .header__logo-text {
@@ -23,16 +24,11 @@
   .header__burger-menu {
     display: none;
   }
-
-  .header__wrapper {
+  
+  .header__container {
     justify-content: space-between;
-    width: @tablet-width;
-    .centering(@tablet-width);
-    padding: 26px 0;
-  }
-
-  .header__logo {
-    margin-left: 33px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   .header__logo-img_tablet {
@@ -41,13 +37,14 @@
 
   .header__nav-panel {
     display: block;
-    width: 456px;
+    width: 439px;
   }
 
   .header__nav-list {
     display: flex;
     justify-content: space-between;
     margin-top: 19px;
+    padding: 0;
   }
 
   .header__nav-item {

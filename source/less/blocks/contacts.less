@@ -1,6 +1,7 @@
-.contacts__address {
+.contacts__container {
   display: flex;
-  padding: 12px 20px 11px 20px;
+  padding-top: 12px;
+  padding-bottom: 11px;
 }
 
 .contacts__title {
@@ -19,10 +20,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts__address {
-    padding: 36px 0 60px 0;
-    .centering(618px);
+  .contacts__container {
     justify-content: space-between;
+    padding: 45px 70px 41px 70px;
   }
 
   .contacts__title {
@@ -33,7 +33,7 @@
 
   .contacts__description {
     width: 155px;
-    margin-top: 16px;
+    margin-top: 19px;
     .font-params(16px, 20px);
     text-align: end;
   }

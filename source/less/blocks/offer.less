@@ -1,6 +1,6 @@
 .offer__wrapper {
   position: relative;
-  height: 467px;
+  height: 503px;
   background-image: url("../../img/index-background-mobile.png");
   background-repeat: no-repeat;
 }
@@ -75,50 +75,46 @@
 
 @media (min-width: @tablet-width) {
   .offer__wrapper {
+    height: 847px;
     position: relative;
-    padding-bottom: 615px;
-  }
-
-  .offer__background-img {
-    display: none;
+    background-image: none;
   }
 
   .offer__title-wrapper {
-    .centering(523px);
+    .centering(532px);
   }
 
   .offer__title {
     position: inherit;
     display: inline-block;
     width: 431px;
-    margin-top: 43px;
+    margin: 37px 0 37px 0;
     .font-params(60px, 62px);
     text-align: start;
-    letter-spacing: 1px;
     color: @black;
   }
 
   .offer__text {
     position: inherit;
     display: inline-block;
-    margin-top: 43px;
     .font-params(20px, 20px);
     text-align: start;
-    letter-spacing: 0.4px;
     color: @black;
   }
-
-  .offer__img_mobile {
-    display: none;
+  
+  .offer__img {
+    top: 238px;
+    left: 29px;
   }
 
-  .offer__button {
-    width: 253px;
-    top: 282px;
-    left: 117px;
-    .font-params(20px, 20px);
-    padding-top: 18px;
-    padding-bottom: 18px;
-    letter-spacing: 0.4px;
+  .offer__button {    
+    top: 267px;
+    left: 111px;
+    width: 245px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;    
   }
 }

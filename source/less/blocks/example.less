@@ -1,9 +1,10 @@
 .example {
-  background-color: @grey;
+  background-color: @grey-background;
 }
 
-.example__wrapper {
-  padding: 25px 0 33px 0;
+.example__container {
+  padding-top: 25px;
+  padding-bottom: 33px;
 }
 
 .example__title {
@@ -11,15 +12,15 @@
   .font-params(36px, 40px);
 }
 
+.example__text {
+  margin: 0 0 25px 0;
+  .font-params(14px, 18px);
+}
+
 .example__text,
 .example__description {
   font-family: @arial, sans-serif;
   color: @grey-text;
-}
-
-.example__text {
-  margin: 0 0 25px 0;
-  .font-params(14px, 18px);
 }
 
 .example__list {
@@ -59,19 +60,20 @@
   display: block;
   .centering(82px);
   margin-top: -10px;
-  background-color: @grey;
+  background-color: @grey-background;
   .font-params(12px, 13px);
   text-align: center;
 }
 
-.example__item-frameless {
+.example__item_frameless {
   width: 280px;
   margin: 0;
   text-align: center;
 }
 
-.example__description-frameless {
-  margin: 0;
+.example__case_frameless,
+.example__description_frameless {
+  display: inline;
   .font-params(14px, 20px);
   text-transform: uppercase;
 }
@@ -81,53 +83,53 @@
     background-color: @white;
   }
 
-  .example__wrapper {
-    width: 708px;
-    padding-top: 15px;
+  .example__container {
+    padding-top: 43px;
   }
 
   .example__title {
+    margin-bottom: 65px;
     .font-params(60px, 60px);
-    letter-spacing: 1.2px;
   }
 
   .example__text {
-    width: 708px;
-    margin-top: 70px;
+    width: 702px;
+    margin-bottom: 52px;
     .font-params(16px, 24px);
-    letter-spacing: 0.3px;
-  }
-
-  .example__list {
-    margin-top: 56px;
   }
 
   .example__list-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 380px;
+    width: 366px;
+    margin: 0;
   }
 
   .example__case {
     width: 120px;
-    padding: 18px 23px;
-    .font-params(30px, 37px);
+    padding: 15px 20px 21px 20px;
+    .font-params(30px, 35px);
   }
 
   .example__description {
-    width: 127px;
+    width: 113px;
     .font-params(14px, 14px);
     background-color: @white;
   }
-
-  .example__item-frameless {
-    display: inline-block;
-    width: 175px;
-    margin-top: 7px;
+  
+  .example__item:nth-child(2) .example__description {
+    width: 139px;
   }
 
-  .example__description-frameless {
+  .example__item_frameless {
+    display: inline-block;
     text-align: end;
+    width: 175px;
+    margin-top: 5px;
+  }
+
+  .example__case_frameless,
+  .example__description_frameless {
     .font-params(20px, 20px);
     line-height: 1.5;
   }
