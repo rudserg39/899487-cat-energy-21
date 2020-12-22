@@ -1,10 +1,11 @@
 .offer__container {
-  background-image: url("../../img/index-background-mobile.png");
+  padding-top: 28px;
+  padding-bottom: 11px;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 302px, transparent 302px), url("../../img/index-background-mobile.png");
   background-repeat: no-repeat;
 }
 
 .offer__title {
-  padding-top: 28px;
   margin-top: 0;
   margin-bottom: 24px;
   .font-params(36px, 36px);
@@ -43,6 +44,8 @@
 
 @media (min-width: @tablet-width) {
   .offer__container {
+    padding-top: 36px;
+    padding-bottom: 0;
     background-image: none;
   }
 
@@ -50,7 +53,7 @@
     position: inherit;
     display: inline-block;
     width: 431px;
-    margin: 37px 0 37px 0;
+    margin: 0 0 37px 0;
     padding: 0;
     .font-params(60px, 62px);
     text-align: start;
@@ -70,14 +73,9 @@
     margin-left: 87px;
   }
 
-  .offer__img {
-    top: 238px;
-    left: 29px;
-  }
-
   .offer__button {
     position: absolute;
-    bottom: 140px;
+    top: 370px;
     left: 112px;
     width: 245px;
     padding-top: 17px;
@@ -90,6 +88,9 @@
 
 @media (min-width: @desktop-width) {
   .offer__container {
+    display: inline-block;
+    width: 720px;
+    padding-top: 54px;
     padding-bottom: 267px;
   }
 
@@ -97,10 +98,6 @@
   .offer__button {
     margin-top: 0;
     margin-left: 80px;
-  }
-
-  .offer__title {
-    margin-top: 54px;
   }
 
   .offer__text {
@@ -111,7 +108,7 @@
   .offer__img {
     position: absolute;
     top: 141px;
-    left: 791px;
+    left: 558px;
   }
 
   .offer__button {

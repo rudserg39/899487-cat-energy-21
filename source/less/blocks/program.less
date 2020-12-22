@@ -1,14 +1,16 @@
+.program__container {
+  padding-top: 11px;
+  padding-bottom: 12px;
+}
+
 .program__item {
   position: relative;
+  padding: 22px 12px 20px 20px;
   background-color: @grey;
 }
 
-.program__item:first-child {
-  margin-top: 23px;
-}
-
 .program__item:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .program__item::before,
@@ -32,10 +34,6 @@
   width: 70px;
   height: 50px;
   background-image: url("../../img/pro-icon-mobile.svg");
-}
-
-.program__item-wrapper {
-  padding: 22px 20px;
 }
 
 .program__title {
@@ -67,7 +65,7 @@
 }
 
 .program__button::after {
-  bottom: 29px;
+  bottom: 26px;
   left: 121px;
   width: 32px;
   height: 10px;
@@ -75,12 +73,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .program__container {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
+
   .program__item:first-child {
     margin-top: 0;
   }
 
   .program__item {
-    padding: 74px 0 60px 0;
+    padding: 74px 283px 60px 53px;
   }
 
   .program__item:not(:last-child) {
@@ -150,6 +153,7 @@
   .program__item {
     display: inline-block;
     width: 570px;
+    padding-right: 50px;
   }
 
   .program__item:not(:last-child) {

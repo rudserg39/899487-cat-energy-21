@@ -1,6 +1,6 @@
 .description__container {
-  padding-top: 25px;
-  padding-bottom: 33px;
+  padding-top: 14px;
+  padding-bottom: 45px;
 }
 
 .description__title {
@@ -17,54 +17,47 @@
 
 .description__item {
   position: relative;
+  display: flex;
+  align-items: center;
   width: 290px;
   list-style-type: none;
 }
 
-.description__item:not(:first-child) {
-  margin-top: 11px;
+.description__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.description__icon-wrapper {
-  position: relative;
+.description__item::before {
+  content: "";
   display: inline-block;
   width: 60px;
   height: 60px;
-  margin-right: 16px;
+  margin-right: 20px;
   background-color: @green;
-}
-
-.description__icon-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.description__item_leaf .description__icon-wrapper::before {
+.description__item_leaf::before {
   background-image: url("../../img/leaf-icon.svg");
 }
 
-.description__item_water .description__icon-wrapper::before {
+.description__item_water::before {
   background-image: url("../../img/water-icon.svg");
 }
 
-.description__item_meal .description__icon-wrapper::before {
+.description__item_meal::before {
   background-image: url("../../img/meal-icon.svg");
 }
 
-.description__item_time .description__icon-wrapper::before {
+.description__item_time::before {
   background-image: url("../../img/time-icon.svg");
 }
 
 .description__text {
   display: inline-block;
   width: 200px;
-  margin-top: 2px;
+  margin: 0;
   font-family: @arial, sans-serif;
   .font-params(14px, 18px);
   vertical-align: top;
@@ -73,7 +66,7 @@
 
 @media (min-width: @tablet-width) {
   .description__container {
-    padding-top: 44px;
+    padding-top: 12px;
     padding-bottom: 0;
     border-bottom: 1px solid #e6e6e6e6;
   }
@@ -90,33 +83,35 @@
   }
 
   .description__list .description__item {
+    flex-flow: column;
+    align-items: flex-start;
     width: 290px;
     margin-top: 33px;
-    padding-bottom: 98px;
+    margin-bottom: 0;
+    padding-bottom: 101px;
     background-repeat: no-repeat;
     background-position-x: 125px;
   }
 
-  .description__item:first-child {
+  .description__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .description__item_leaf {
     background-image: url("../../img/number-1.png");
   }
 
-  .description__item:nth-child(2) {
+  .description__item_water {
     background-image: url("../../img/number-2.png");
   }
 
-  .description__item:nth-child(3) {
+  .description__item_meal {
     background-image: url("../../img/number-3.png");
   }
 
-  .description__item:nth-child(4) {
+  .description__item_time {
     background-image: url("../../img/number-4.png");
-  }
-
-  .description__icon-wrapper {
-    width: 80px;
-    height: 80px;
-    margin-right: 0;
   }
 
   .description__text {
@@ -128,7 +123,7 @@
 
 @media (min-width: @desktop-width) {
   .description__container {
-    padding-top: 70px;
+    padding-top: 38px;
     border-bottom: none;
   }
 
