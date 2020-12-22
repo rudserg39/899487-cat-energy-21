@@ -1,13 +1,142 @@
-.description__img {
-  background-color: @green;
+.description__container {
+  padding-top: 14px;
+  padding-bottom: 45px;
 }
 
 .description__title {
+  margin: 0 0 38px 0;
   .font-params(36px, 40px);
 }
 
+.description__list {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+}
+
+.description__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 290px;
+  list-style-type: none;
+}
+
+.description__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.description__item::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: @green;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description__item_leaf::before {
+  background-image: url("../../img/leaf-icon.svg");
+}
+
+.description__item_water::before {
+  background-image: url("../../img/water-icon.svg");
+}
+
+.description__item_meal::before {
+  background-image: url("../../img/meal-icon.svg");
+}
+
+.description__item_time::before {
+  background-image: url("../../img/time-icon.svg");
+}
+
 .description__text {
-  font-family: "Arial", sans-serif;
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  font-family: @arial, sans-serif;
   .font-params(14px, 18px);
-  color: #444444;
+  vertical-align: top;
+  color: @grey-text;
+}
+
+@media (min-width: @tablet-width) {
+  .description__container {
+    padding-top: 12px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #e6e6e6e6;
+  }
+
+  .description__title {
+    .font-params(60px, 60px);
+  }
+
+  .description__list {
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 673px;
+  }
+
+  .description__list .description__item {
+    flex-flow: column;
+    align-items: flex-start;
+    width: 290px;
+    margin-top: 33px;
+    margin-bottom: 0;
+    padding-bottom: 101px;
+    background-repeat: no-repeat;
+    background-position-x: 125px;
+  }
+
+  .description__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .description__item_leaf {
+    background-image: url("../../img/number-1.png");
+  }
+
+  .description__item_water {
+    background-image: url("../../img/number-2.png");
+  }
+
+  .description__item_meal {
+    background-image: url("../../img/number-3.png");
+  }
+
+  .description__item_time {
+    background-image: url("../../img/number-4.png");
+  }
+
+  .description__text {
+    width: 260px;
+    .font-params(16px, 25px);
+    margin: 29px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__container {
+    padding-top: 38px;
+    border-bottom: none;
+  }
+
+  .description__title {
+    margin-bottom: 72px;
+  }
+
+  .description__list {
+    width: 1220px;
+  }
+
+  .description__list .description__item {
+    width: 244px;
+    margin-top: 0;
+  }
 }

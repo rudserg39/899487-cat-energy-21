@@ -1,21 +1,37 @@
-.offer {
-  background-color: @green;
+.offer__container {
+  padding-top: 28px;
+  padding-bottom: 11px;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 302px, transparent 302px), url("../../img/index-background-mobile.png");
+  background-repeat: no-repeat;
 }
 
 .offer__title {
+  margin-top: 0;
+  margin-bottom: 24px;
   .font-params(36px, 36px);
+  text-align: center;
   color: @white;
 }
 
 .offer__text {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
   .font-params(14px, 14px);
-  color: @white;
   text-transform: uppercase;
+  color: @white;
 }
 
 .offer__button {
+  display: inline-block;
+  .centering(280px);
+  padding: 11px 0 11px 0;
   .font-params(14px, 18px);
   background-color: @green;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @white;
 
   &:hover {
     background-color: @green-hover;
@@ -24,7 +40,78 @@
   &:active {
     opacity: 0.5;
   }
-  color: @white;
-  text-decoration: none;
-  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .offer__container {
+    padding-top: 36px;
+    padding-bottom: 0;
+    background-image: none;
+  }
+
+  .offer__title {
+    position: inherit;
+    display: inline-block;
+    width: 431px;
+    margin: 0 0 37px 0;
+    padding: 0;
+    .font-params(60px, 62px);
+    text-align: start;
+    color: @black;
+  }
+
+  .offer__text {
+    position: inherit;
+    display: inline-block;
+    margin-bottom: 20px;
+    .font-params(20px, 20px);
+    text-align: start;
+    color: @black;
+  }
+
+  .offer__text-wrapper {
+    margin-left: 87px;
+  }
+
+  .offer__button {
+    position: absolute;
+    top: 370px;
+    left: 112px;
+    width: 245px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer__container {
+    display: inline-block;
+    width: 720px;
+    padding-top: 54px;
+    padding-bottom: 267px;
+  }
+
+  .offer__text-wrapper,
+  .offer__button {
+    margin-top: 0;
+    margin-left: 80px;
+  }
+
+  .offer__text {
+    display: block;
+    margin-bottom: 52px;
+  }
+
+  .offer__img {
+    position: absolute;
+    top: 141px;
+    left: 558px;
+  }
+
+  .offer__button {
+    position: inherit;
+  }
 }

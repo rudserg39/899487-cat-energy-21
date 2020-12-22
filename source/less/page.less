@@ -1,0 +1,40 @@
+.page {
+  width: 320px;
+  margin: auto;
+  font-family: @oswald, @arial, sans-serif;
+  .font-params(14px, 18px);
+}
+
+
+@media (min-width: @tablet-width) {
+  .page {
+    width: @tablet-width;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page {
+    width: @desktop-width;
+  }
+
+  .page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 697px;
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 697px, transparent 302px), url("../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    z-index: -1;
+  }
+
+  .container {
+    padding: 0 110px;
+  }
+}
