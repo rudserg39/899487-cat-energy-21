@@ -46,34 +46,38 @@
   margin-right: 13px;
 }
 
-.form__client-data .form__input {
+.form__client-data .form__input,
+.form__feedback .form__input {
+  padding: 13px 14px 13px 14px;
   border: 1px solid @grey-form-border;
 }
 
-.form__input-name {
-  padding: 13px 57px 13px 14px;
+.form__input_name {
+  width: 229px;
 }
 
-.form__input-weight {
-  padding: 13px 31px 13px 18px;
+.form__input_weight {
+  width: 207px;
 }
 
-.form__input-age {
-  padding: 13px 0 13px 15px;
+.form__input_age {
+  width: 173px;
 }
 
 .form__program {
-  padding-top: 29px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .form__program .form__item {
   position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .form__program .form__item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 13px;
 }
 
 .form__program .form__input {
@@ -105,7 +109,7 @@
 .form__program .form__input:checked + .form__label::after {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 8px;
   left: 8px;
   padding: 6.76px;
   background-color: @green;
@@ -143,19 +147,19 @@
 }
 
 .form__feedback .form__input {
-  border: 1px solid @grey-frame;
+  padding-right: 40px;
   background-repeat: no-repeat;
 }
 
-.form__input-email {
-  padding: 13px 48px 13px 13px;
+.form__input_email {
+  width: 219px;
   background-image: url("../../img/mail-icon.svg");
   background-position-x: 184px;
   background-position-y: 16px;
 }
 
-.form__input-tel {
-  padding: 13px 32px 13px 12px;
+.form__input_tel {
+  width: 202px;
   background-image: url("../../img/phone-icon.svg");
   background-position-x: 168px;
   background-position-y: 12px;
@@ -189,15 +193,20 @@
 }
 
 .form__extra .form__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .form__extra .form__subtitle::after {
   width: 136px;
 }
 
+.form__extra .form__item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .form__extra .form__item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .form__extra .form__input {
@@ -219,12 +228,12 @@
 }
 
 .form__submit {
-  padding-top: 21px;
+  padding-top: 15px;
   padding-bottom: 32px;
 }
 
 .form__button {
-  display: inherit;
+  padding: 10px 0;
   .centering(280px);
   .font-params(16px, 20px);
 }
