@@ -9,6 +9,20 @@
   clip: rect(0 0 0 0);
 }
 
-.container {
-  padding: 0 20px;
+@media (min-width: @mobile-width) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    padding: 0 110px;
+  }
 }
