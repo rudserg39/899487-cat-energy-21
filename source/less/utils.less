@@ -9,6 +9,26 @@
   clip: rect(0 0 0 0);
 }
 
-.container {
-  padding: 0 20px;
+@media (min-width: @mobile-width) {
+  .index-container,
+  .form-container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .index-container {
+    padding: 0 30px;
+  }
+
+  .form-container {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-container,
+  .form-container {
+    padding: 0 110px;
+  }
 }

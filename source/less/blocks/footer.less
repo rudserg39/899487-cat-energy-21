@@ -3,25 +3,29 @@
 }
 
 .footer__container {
-  padding-top: 39px;
-  padding-bottom: 20px;
+  padding-top: 17.5px;
+  padding-bottom: 7.5px;
 }
 
 .footer__logo {
-  margin-bottom: 28px;
+  padding: 20px 0;
   text-align: center;
 }
 
 .footer__social {
-  margin-bottom: 19px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.footer__developer {
+  padding: 10px 0;
 }
 
 @media (min-width: @tablet-width) {
   .footer__container {
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 41px 30px;
   }
 
   .footer__logo,
@@ -29,7 +33,12 @@
     margin: 0;
   }
 
+  .footer__social {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .footer__developer {
-    margin-top: -9px;
+    margin-top: 10px;
   }
 }
