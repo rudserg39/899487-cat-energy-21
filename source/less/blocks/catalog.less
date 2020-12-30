@@ -42,7 +42,7 @@
 }
 
 .catalog__img {
-  margin-top: -3px;
+  margin-top: -4px;
 }
 
 .catalog__table {
@@ -96,4 +96,115 @@
 .catalog__button_grey {
   background-color: @grey;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__container {
+    padding-top: 33px;
+    padding-bottom: 20px;
+  }
+
+  .catalog__title {
+    margin-bottom: 122px;
+    padding: 0 30px;
+    .font-params(60px, 60px);
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .catalog__item {
+    height: 430px;
+    margin-top: 42px;
+    padding: 0;
+    text-align: center;
+    border-top: none;
+    background-color: @grey;
+  }
+
+  .catalog__item:not(:last-child):not(:nth-last-child(-n + 2)) {
+    margin-bottom: 98px;
+  }
+
+  .catalog__item-wrapper {
+    position: relative;
+    flex-flow: column;
+    width: 324px;
+    padding: 162px 37px 22px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .catalog__img {
+    position: absolute;
+    left: 82px;
+    margin: 0;
+  }
+
+  .catalog__img_small {
+    top: -45px;
+  }
+
+  .catalog__img_big {
+    top: -73px;
+  }
+
+  .catalog__table {
+    width: 250px;
+    margin: auto;
+  }
+
+  .catalog__table-caption {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 19px;
+    .font-params(20px, 24px);
+    text-align: center;
+  }
+
+  .catalog__table-row {
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid @grey-frame;
+  }
+
+  .catalog__table-data {
+    .font-params(16px, 16px);
+    font-family: @arial, sans-serif;
+  }
+
+  .catalog__button {
+    width: 248px;
+    margin: auto;
+  }
+
+  .catalog__item_hidden {
+    width: 324px;
+    padding: 53px 20px 25px 20px;
+    background-color: @white;
+    border: 2px solid @grey;
+  }
+
+  .catalog__plus {
+    margin-bottom: 47px;
+  }
+
+  .catalog__subtitle {
+    width: 170px;
+    margin: auto;
+    margin-bottom: 24px;
+    .font-params(20px, 22px);
+  }
+
+  .catalog__subtitle-description {
+    width: 190px;
+    margin: auto;
+    margin-bottom: 85px;
+    .font-params(16px, 18px);
+    font-family: @arial, sans-serif;
+  }
 }

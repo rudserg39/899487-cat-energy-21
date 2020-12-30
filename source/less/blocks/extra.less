@@ -9,14 +9,18 @@
   .font-params(24px, 24px);
 }
 
+.extra__title::before,
 .extra__title::after {
   content: "";
   position: absolute;
+  height: 2px;
+  background-color: #68b738;
+}
+
+.extra__title::after {
   top: 15px;
   right: -20px;
   width: 53px;
-  height: 2px;
-  background-color: #68b738;
 }
 
 .extra__list {
@@ -61,4 +65,61 @@
   width: 100%;
   padding: 10px 0;
   .font-params(16px, 20px);
+}
+
+@media (min-width: @tablet-width) {
+  .extra__container {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+
+  .extra__title {
+    margin-bottom: 80px;
+    padding: 0 38px;
+    .font-params(36px, 36px);
+  }
+
+  .extra__title::before {
+    top: 22px;
+    left: -30px;
+    width: 30px;
+  }
+
+  .extra__title::after {
+    top: 21px;
+    right: -30px;
+    width: 327px;
+  }
+
+  .extra__list {
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .extra__item {
+    padding: 25px 37px;
+  }
+
+  .extra__table {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .extra__caption {
+    margin-bottom: 0;
+    .font-params(20px, 20px);
+  }
+
+  .extra__table-data {
+    .font-params(16px, 20px);
+    font-family: @arial;
+  }
+
+  .extra__table-data_price {
+    width: 46px;
+    margin-left: 46px;
+    text-align: end;
+  }
 }
