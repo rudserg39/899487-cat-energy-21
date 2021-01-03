@@ -9,7 +9,7 @@
   <body class="page">
     
     <header class="header">
-      <div class="header__container form-container">
+      <div class="header__wrapper container container_wide container_extra-wide">
         <div class="logo header__logo">
           <picture class="header__picture">
             <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
@@ -34,12 +34,12 @@
     </header>
     
     <main>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__title-wrapper form-container">
+      <form class="form container container_wide container_extra-wide" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__title-wrapper">
           <h1 class="form__title">Подбор программы</h1>
           <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
-        <div class="form__wrapper form-container">
+        <div class="form__wrapper">
           <div class="form__client-data">
             <fieldset class="form__fieldset">
               <h2 class="visually-hidden">Информация о животном</h2>
@@ -75,7 +75,7 @@
             </fieldset>
           </div>  
         </div>
-        <div class="form__feedback form-container">
+        <div class="form__feedback">
           <fieldset class="form__fieldset">
             <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
             <div class="form__feedback-wrapper">
@@ -90,14 +90,14 @@
             </div>
           </fieldset>
         </div>
-        <div class="form__comment form-container">
+        <div class="form__comment">
           <h2 class="form__subtitle">Комментарий</h2>
           <fieldset class="form__fieldset">
             <label class="form__label visually-hidden" for="form__comment">Комментарий</label>
             <textarea id="form__comment" class="form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
-        <div class="form__extra form-container">
+        <div class="form__extra">
           <fieldset class="form__fieldset">
             <h2 class="form__subtitle">Дополнительно</h2>
             <div class="form__extra-wrapper">
@@ -120,7 +120,7 @@
             </div>
           </fieldset>
         </div>
-        <div class="form__submit form-container">
+        <div class="form__submit">
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__note">* — Обязательные поля</p>
         </div>
@@ -129,7 +129,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <div class="contacts__container form-container">
+          <div class="contacts__text-wrapper container container_medium container_extra-wide">
             <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
             <address class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span class="contacts__description-city">Санкт-Петербург</span></address>
           </div>
@@ -139,7 +139,7 @@
     </main>
     
     <footer class="footer">
-      <div class="footer__container form-container">
+      <div class="footer__wrapper container container_medium container_extra-wide">
         <div class="logo footer__logo">
           <img class="logo__img" src="./img/footer-logo-text.svg" alt="Логотип Cat Energy">
         </div> 
@@ -152,7 +152,7 @@
         </div>
         <div class="developer footer__developer">
           <p class="developer__name">HTML Academy</p>
-          <a class="developer__link" href="#"><img src="./img/htmlacademy-icon.svg" alt="Логотип HTML Academy"></a>
+          <a class="developer__link" href="#"><img class="developer__logo" src="./img/htmlacademy-icon.svg" alt="Логотип HTML Academy"></a>
         </div>
       </div>
     </footer>
