@@ -1,4 +1,4 @@
-.catalog__container {
+.catalog__wrapper {
   padding-top: 27px;
   border-top: 1px solid #ebebeb;
 }
@@ -6,7 +6,6 @@
 .catalog__title {
   margin-top: 0;
   margin-bottom: 41px;
-  padding: 0 20px;
   .font-params(36px, 36px);
 }
 
@@ -29,7 +28,8 @@
 }
 
 .catalog__item {
-  padding: 22px 20px 24px 20px;
+  padding-top: 23px;
+  padding-bottom: 24px;
   border-top: 1px solid #ebebeb;
   list-style-type: none;
 }
@@ -50,6 +50,7 @@
 }
 
 .catalog__table-caption {
+  width: 80px;
   margin-bottom: 11px;
   text-align: start;
 }
@@ -99,14 +100,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .catalog__container {
+  .catalog__wrapper {
     padding-top: 33px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
 
   .catalog__title {
-    margin-bottom: 122px;
-    padding: 0 30px;
+    margin-bottom: 28px;
     .font-params(60px, 60px);
   }
 
@@ -114,20 +114,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 30px;
+    align-content: space-between;
   }
 
   .catalog__item {
-    height: 430px;
-    margin-top: 42px;
+    height: 431px;
+    margin-top: 138px;
     padding: 0;
     text-align: center;
     border-top: none;
     background-color: @grey;
-  }
-
-  .catalog__item:not(:last-child):not(:nth-last-child(-n + 2)) {
-    margin-bottom: 98px;
   }
 
   .catalog__item-wrapper {
@@ -151,11 +147,6 @@
 
   .catalog__img_big {
     top: -73px;
-  }
-
-  .catalog__table {
-    width: 250px;
-    margin: auto;
   }
 
   .catalog__table-caption {
@@ -183,8 +174,7 @@
   }
 
   .catalog__item_hidden {
-    width: 324px;
-    padding: 53px 20px 25px 20px;
+    padding: 54px 36px;
     background-color: @white;
     border: 2px solid @grey;
   }
@@ -206,5 +196,45 @@
     margin-bottom: 85px;
     .font-params(16px, 18px);
     font-family: @arial, sans-serif;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__wrapper {
+    padding-top: 17px;
+    padding-bottom: 75px;
+  }
+
+  .catalog__title {
+    margin-bottom: 23px;
+  }
+
+  .catalog__item {
+    margin-top: 142px;
+  }
+
+  .catalog__item-wrapper {
+    width: 245px;
+    padding: 162px 36.5px 23px;
+  }
+
+  .catalog__img {
+    left: 43px;
+  }
+
+  .catalog__img_small {
+    top: -52px;
+  }
+
+  .catalog__img_big {
+    top: -80px;
+  }
+
+  .catalog__button {
+    width: 168px;
+  }
+
+  .catalog__item_hidden {
+    padding: 51px 25px 30px;
   }
 }
