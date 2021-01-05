@@ -1,14 +1,33 @@
 .button {
   display: inline-block;
-  background-color: @green;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: @white;
   border: none;
+}
+
+.button:active .button__text {
+  opacity: 0.3;
+}
+
+.button_green {
+  background-color: @green;
 
   &:hover {
     background-color: @green-hover;
+  }
+
+  &:active {
+    @green-hover: #5EAA2F;
+  }
+}
+
+.button_grey {
+  background-color: @grey;
+
+  &:hover {
+    background-color: @grey-hover;
   }
 
   &:active {
