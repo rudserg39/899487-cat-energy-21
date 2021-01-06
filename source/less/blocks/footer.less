@@ -3,14 +3,25 @@
 }
 
 .footer__wrapper {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 11px;
 }
 
 .footer__logo {
   padding-top: 30px;
   padding-bottom: 28px;
   text-align: center;
+  cursor: pointer;
+}
+
+.footer__img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social {
@@ -27,8 +38,8 @@
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 27px;
+    padding-bottom: 38px;
   }
 
   .footer__logo,
