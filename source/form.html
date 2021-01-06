@@ -27,20 +27,20 @@
           <ul class="header__nav-list">
             <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
             <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог продукции</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">Подбор программы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link_active" href="#">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
     </header>
     
     <main>
-      <form class="form container container_wide container_extra-wide" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__title-wrapper">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__title-wrapper container container_wide container_extra-wide">
           <h1 class="form__title">Подбор программы</h1>
           <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
         <div class="form__wrapper">
-          <div class="form__client-data">
+          <div class="form__client-data container container_wide container_extra-wide">
             <fieldset class="form__fieldset">
               <h2 class="visually-hidden">Информация о животном</h2>
               <div class="form__item">
@@ -57,7 +57,7 @@
               </div>
             </fieldset>
           </div> 
-          <div class="form__program">
+          <div class="form__program container container_wide container_extra-wide">
             <fieldset class="form__fieldset">
               <h2 class="visually-hidden">Выбор программы</h2>
               <div class="form__item">
@@ -75,29 +75,29 @@
             </fieldset>
           </div>  
         </div>
-        <div class="form__feedback">
+        <div class="form__feedback container container_wide container_extra-wide">
           <fieldset class="form__fieldset">
             <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
             <div class="form__feedback-wrapper">
               <div class="form__item">
                 <label class="form__label form__label_email" for="form-email">E-mail:*</label>
-                <input id="form-email" class="form__input form__input_email" type="text" placeholder="kuklachev@gmail.com" required>
+                <input id="form-email" class="form__input form__input_email" type="email" placeholder="kuklachev@gmail.com" required>
               </div>
               <div class="form__item">
                 <label class="form__label form__label_tel" for="form-tel">Телефон:*</label>
-                <input id="form-tel" class="form__input form__input_tel" type="text" placeholder="8 (960) 900-60-90" required>
+                <input id="form-tel" class="form__input form__input_tel" type="tel" placeholder="8 (960) 900-60-90" required>
               </div>
             </div>
           </fieldset>
         </div>
-        <div class="form__comment">
+        <div class="form__comment container container_wide container_extra-wide">
           <h2 class="form__subtitle">Комментарий</h2>
           <fieldset class="form__fieldset">
             <label class="form__label visually-hidden" for="form__comment">Комментарий</label>
             <textarea id="form__comment" class="form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
-        <div class="form__extra">
+        <div class="form__extra container container_wide container_extra-wide">
           <fieldset class="form__fieldset">
             <h2 class="form__subtitle">Дополнительно</h2>
             <div class="form__extra-wrapper">
@@ -120,8 +120,8 @@
             </div>
           </fieldset>
         </div>
-        <div class="form__submit">
-          <button class="form__button button" type="submit">Отправить заявку</button>
+        <div class="form__submit container container_wide container_extra-wide">
+          <button class="form__button button button_green" type="submit">Отправить заявку</button>
           <p class="form__note">* — Обязательные поля</p>
         </div>
       </form>
@@ -134,14 +134,14 @@
             <address class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span class="contacts__description-city">Санкт-Петербург</span></address>
           </div>
         </div>
-        <div class="map"></div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6258129318292!2d30.32166337905899!3d59.938351023853045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609841945741!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
     
     <footer class="footer">
       <div class="footer__wrapper container container_medium container_extra-wide">
         <div class="logo footer__logo">
-          <img class="logo__img" src="./img/footer-logo-text.svg" alt="Логотип Cat Energy">
+          <img class="logo__img footer__img" src="./img/footer-logo-text.svg" alt="Логотип Cat Energy">
         </div> 
         <div class="social footer__social">
           <ul class="social__list">
