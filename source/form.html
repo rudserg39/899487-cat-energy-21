@@ -9,25 +9,30 @@
   <body class="page">
     
     <header class="header">
-      <div class="header__wrapper container container_wide container_extra-wide">
-        <div class="logo header__logo">
-          <picture class="header__picture">
-            <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="header__img" src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
-          </picture>
+      <div class="header__wrapper ">
+        <div class="header__logo-wrapper container container_medium container_extra-wide">
+          <div class="logo header__logo">
+            <picture class="header__picture">
+              <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
+              <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="header__img" src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
+            </picture>
+          </div>
+          <div class="header__logo-text">
+            <img class="logo__img" src="./img/logo-text.svg" alt="Логотип Cat Energy">  
+          </div>
+          <div class="burger header__burger">
+            <span class="burger__line burger__line_first"></span>
+            <span class="burger__line burger__line_second"></span>
+            <span class="burger__line burger__line_third"></span>
+            <span class="burger__line burger__line_fourth"></span>
+          </div>
         </div>
-        <div class="header__logo-text">
-          <img class="logo__img" src="./img/logo-text.svg" alt="Логотип Cat Energy">  
-        </div>
-        <button class="header__burger-menu">
-          <img class="header__burger-menu-img" src="./img/burger-menu.svg" alt="Кнопка меню">
-        </button>
-        <nav class="header__nav-panel">
+        <nav class="header__nav-panel header__nav-panel_close">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог продукции</a></li>
-            <li class="header__nav-item"><a class="header__nav-link header__nav-link_active" href="#">Подбор программы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link_black" href="index.html">Главная</a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link_black" href="catalog.html">Каталог продукции</a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link_black header__nav-link_active" href="#">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -156,6 +161,8 @@
         </div>
       </div>
     </footer>
+    
+    <script src="js/script.js"></script>
     
   </body>
 </html>

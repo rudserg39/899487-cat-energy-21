@@ -9,21 +9,26 @@
   <body class="page page__index-background">
 
     <header class="header">
-      <div class="header__wrapper container container_medium container_extra-wide">
-        <div class="logo header__logo">
-          <picture class="header__picture">
-            <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="header__img" src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
-          </picture>
+      <div class="header__wrapper ">
+        <div class="header__logo-wrapper container container_medium container_extra-wide">
+          <div class="logo header__logo">
+            <picture class="header__picture">
+              <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
+              <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="header__img" src="./img/logo-icon-mobile.svg" alt="Логотип Cat Energy">
+            </picture>
+          </div>
+          <div class="header__logo-text">
+            <img class="logo__img" src="./img/header-logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">  
+          </div>
+          <div class="burger header__burger">
+            <span class="burger__line burger__line_first"></span>
+            <span class="burger__line burger__line_second"></span>
+            <span class="burger__line burger__line_third"></span>
+            <span class="burger__line burger__line_fourth"></span>
+          </div>
         </div>
-        <div class="header__logo-text">
-          <img class="logo__img" src="./img/logo-text.svg" alt="Логотип Cat Energy">  
-        </div>
-        <button class="header__burger-menu">
-          <img class="header__burger-menu-img" src="./img/burger-menu.svg" alt="Кнопка меню">
-        </button>
-        <nav class="header__nav-panel">
+        <nav class="header__nav-panel header__nav-panel_close">
           <ul class="header__nav-list">
             <li class="header__nav-item"><a class="header__nav-link header__nav-link_white header__nav-link_active" href="#">Главная</a></li>
             <li class="header__nav-item"><a class="header__nav-link header__nav-link_white" href="catalog.html">Каталог продукции</a></li>
@@ -41,9 +46,9 @@
             <p class="offer__text">Занялся собой? Займись котом!</p>
           </div>
           <picture class="offer__picture">
-            <source srcset="./img/product-desktop.png" media="(min-width: 1440px)">
-            <source srcset="./img/product-tablet.png" media="(min-width: 768px)">
-            <img class="offer__img" src="./img/product-mobile.png" alt="Изображение товара">
+            <source srcset="./img/index-product-desktop.png" media="(min-width: 1440px)">
+            <source srcset="./img/index-product-tablet@1x.png 1x, ./img/index-product-tablet@2x.png 2x" media="(min-width: 768px)">
+            <img class="offer__img" src="./img/index-product-mobile@1x.png" srcset="./img/index-product-mobile@2x.png 2x" alt="Изображение товара">
           </picture>
           <a class="offer__button button button_green" href="form.html">
             <span class="button__text">Подобрать программу</span>
@@ -118,7 +123,7 @@
           <h2 class="visually-hidden">Слайдер</h2>
           <picture class="slider__picture">
             <source srcset="./img/slider-img-before-tablet.png" media="(min-width: 768px)">
-            <img class="slider__img" src="./img/slider-img-before-mobile.png" alt="Изображение животного">
+            <img class="slider__img" src="./img/slider-before-mobile@1x.png" alt="Изображение животного">
           </picture>
           <div class="slider__control">
             <button class="slider__before">Было</button>
@@ -154,7 +159,7 @@
     <footer class="footer">
       <div class="footer__wrapper container container_medium container_extra-wide">
         <div class="logo footer__logo">
-          <img class="logo__img" src="./img/footer-logo-text.svg" alt="Логотип Cat Energy">
+          <img class="logo__img" src="./img/footer-logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
         </div> 
         <div class="social footer__social">
           <ul class="social__list">

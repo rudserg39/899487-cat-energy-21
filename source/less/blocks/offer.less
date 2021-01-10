@@ -1,8 +1,14 @@
 .offer__wrapper {
   padding-top: 28px;
   padding-bottom: 11px;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 302px, transparent 302px), url("../../img/index-background-mobile.png");
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 302px, transparent 302px), url("../../img/index-background-mobile@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 302px, transparent 302px), url("../../img/index-background-mobile@2x.jpg");
+  }
+
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .offer__title {
@@ -30,7 +36,7 @@
 
 @media (min-width: @tablet-width) {
   .offer__wrapper {
-    padding-top: 22px;
+    padding-top: 32px;
     padding-bottom: 0;
     background-image: none;
   }
@@ -74,7 +80,7 @@
   .offer__wrapper {
     display: inline-block;
     width: 720px;
-    padding-top: 47px;
+    padding-top: 51px;
     padding-bottom: 267px;
     padding-left: 190px;
   }
