@@ -30,13 +30,13 @@ const afterButton = slider.querySelector('.slider__after');
 const sliderToggle = slider.querySelector('.slider__toggle-mark');
 
 beforeButton.addEventListener('click', () => {
-  sliderImage.src = './img/slider-img-before-mobile.png';
+  sliderImage.src = './img/slider-before-mobile@1x.png';
   sliderToggle.style.setProperty('left', '6px');
   sliderToggle.style.setProperty('transition-duration', '500ms');
 });
 
 afterButton.addEventListener('click', () => {
-  sliderImage.src = './img/slider-img-after-mobile.png';
+  sliderImage.src = './img/slider-after-mobile@1x.png';
   sliderToggle.style.setProperty('left', '44px');
   sliderToggle.style.setProperty('transition-duration', '500ms');
 });
