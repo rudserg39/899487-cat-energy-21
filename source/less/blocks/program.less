@@ -20,20 +20,20 @@
   background-repeat: no-repeat;
 }
 
-.program__item:first-child::before {
+.program__item_slim::before {
   top: 21px;
   left: 22px;
   width: 50px;
   height: 55px;
-  background-image: url("../../img/cat-slim-icon.svg");
+  background-image: url("/img/cat-slim-icon.svg");
 }
 
-.program__item:nth-child(2)::before {
+.program__item_pro::before {
   top: 24px;
   left: 13px;
   width: 70px;
   height: 50px;
-  background-image: url("../../img/cat-pro-icon.svg");
+  background-image: url("/img/cat-pro-icon.svg");
 }
 
 .program__title {
@@ -65,7 +65,7 @@
   left: 121px;
   width: 32px;
   height: 10px;
-  background-image: url("../../img/arrow-icon.svg");
+  background-image: url("/img/arrow-icon.svg");
 }
 
 @media (min-width: @tablet-width) {
@@ -86,22 +86,22 @@
     margin-bottom: 28px;
   }
 
-  .program__item:first-child::before {
+  .program__item_slim::before {
     top: 78px;
     right: 61px;
     left: unset;
     width: 200px;
     height: 211px;
-    background-image: url("../../img/slim-icon-tablet.svg");
+    background-size: 199px;
   }
 
-  .program__item:nth-child(2)::before {
+  .program__item_pro::before {
     top: 91px;
-    right: 26px;
+    right: 27px;
     left: unset;
-    width: 270px;
+    width: 268px;
     height: 200px;
-    background-image: url("../../img/pro-icon-tablet.svg");
+    background-size: 266px;
   }
 
   .program__item-wrapper {
@@ -157,20 +157,20 @@
     margin-bottom: 0;
   }
 
-  .program__item:first-child::before {
+  .program__item_slim::before {
     top: 41px;
     left: 52px;
     width: 100px;
     height: 110px;
-    background-image: url("../../img/slim-icon-desktop.svg");
+    background-size: 99px;
   }
 
-  .program__item:nth-child(2)::before {
+  .program__item_pro::before {
     top: 47px;
     left: 33px;
     width: 141px;
     height: 102px;
-    background-image: url("../../img/pro-icon-desktop.svg");
+    background-size: 133px;
   }
 
   .program__title {
