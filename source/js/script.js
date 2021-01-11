@@ -31,12 +31,14 @@ const sliderToggle = slider.querySelector('.slider__toggle-mark');
 
 beforeButton.addEventListener('click', () => {
   sliderImage.src = './img/slider-before-mobile@1x.png';
+  sliderImage.srcset = './img/slider-before-mobile@2x.png 2x';
   sliderToggle.style.setProperty('left', '6px');
   sliderToggle.style.setProperty('transition-duration', '500ms');
 });
 
 afterButton.addEventListener('click', () => {
   sliderImage.src = './img/slider-after-mobile@1x.png';
+  sliderImage.srcset = './img/slider-after-mobile@2x.png 2x';
   sliderToggle.style.setProperty('left', '44px');
   sliderToggle.style.setProperty('transition-duration', '500ms');
 });
