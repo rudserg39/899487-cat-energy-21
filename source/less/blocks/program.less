@@ -13,33 +13,37 @@
   margin-bottom: 20px;
 }
 
-.program__item::before,
-.program__button::after {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-}
-
-.program__item_slim::before {
-  top: 21px;
-  left: 22px;
-  width: 50px;
-  height: 55px;
-  background-image: url("/img/cat-slim-icon.svg");
-}
-
-.program__item_pro::before {
-  top: 24px;
-  left: 13px;
-  width: 70px;
-  height: 50px;
-  background-image: url("/img/cat-pro-icon.svg");
+.program__item-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
 }
 
 .program__title {
-  margin: 0 0 21px 71px;
+  display: inline-block;
+  margin: 0;
   .font-params(24px, 53px);
   text-transform: uppercase;
+}
+
+.program__item_slim .program__title {
+  margin-left: 21px;
+}
+
+.program__item_pro .program__title {
+  margin-left: 10px;
+}
+
+.program__item-icon_slim {
+  margin-left: 2px;
+}
+
+.program__item-icon_pro {
+  margin-left: -7px;
+}
+
+.program__item-arrow-icon {
+  margin-left: 11px;
 }
 
 .program__text {
@@ -60,12 +64,8 @@
   color: @black;
 }
 
-.program__button::after {
-  bottom: 26px;
-  left: 121px;
-  width: 32px;
-  height: 10px;
-  background-image: url("/img/arrow-icon.svg");
+.arrow-icon {
+  margin-left: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -86,26 +86,12 @@
     margin-bottom: 28px;
   }
 
-  .program__item_slim::before {
-    top: 78px;
-    right: 61px;
-    left: unset;
-    width: 200px;
-    height: 211px;
-    background-size: 199px;
-  }
-
-  .program__item_pro::before {
-    top: 91px;
-    right: 27px;
-    left: unset;
-    width: 268px;
-    height: 200px;
-    background-size: 266px;
-  }
-
   .program__item-wrapper {
-    padding: 0 0 0 53px;
+    position: relative;
+  }
+
+  .program__item-icon {
+    position: absolute;
   }
 
   .program__title {
@@ -122,22 +108,17 @@
     border-bottom: none;
   }
 
-  .program__item:first-child .program__text {
+  .program__item_slim .program__text {
     width: 372px;
   }
 
-  .program__item:nth-child(2) .program__text {
+  .program__item_pro .program__text {
     width: 340px;
   }
 
   .program__button {
     margin: 0;
     .font-params(20px, 29.6px);
-  }
-
-  .program__button::after {
-    bottom: 70px;
-    left: 184px;
   }
 }
 
