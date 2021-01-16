@@ -128,7 +128,7 @@
   position: absolute;
   top: 8px;
   left: 8px;
-  padding: 6.76px;
+  padding: 7px;
   background-color: @green;
   border-radius: 50%;
 }
@@ -161,6 +161,10 @@
   padding-bottom: 11px;
 }
 
+.form__feedback .form__item {
+  position: relative;
+}
+
 .form__feedback .form__label_email {
   width: 73px;
   margin-right: 8px;
@@ -175,18 +179,18 @@
   background-repeat: no-repeat;
 }
 
-.form__input_email {
-  width: 219px;
-  background-image: url("/img/email-icon.svg");
-  background-position-x: 183px;
-  background-position-y: 16px;
+.form__item-icon {
+  position: absolute;
 }
 
-.form__input_tel {
-  width: 202px;
-  background-image: url("/img/phone-icon.svg");
-  background-position-x: 170px;
-  background-position-y: 12px;
+.form__item-icon_email {
+  top: 16px;
+  right: 15px;
+}
+
+.form__item-icon_tel {
+  top: 13px;
+  right: 13px;
 }
 
 .form__comment {
@@ -517,7 +521,7 @@
   }
 
   .form__subtitle {
-    margin-bottom: 74px;
+    margin-bottom: 77px;
   }
 
   .form__subtitle::before,
@@ -538,7 +542,7 @@
   }
 
   .form__feedback .form__label_email {
-    margin-right: 8px;
+    margin-right: 22px;
   }
 
   .form__comment .form__subtitle::after {
@@ -558,14 +562,18 @@
     margin-bottom: 0;
   }
 
-  .form__feedback .form__input_email {
-    width: 490px;
-    background-position-x: 452px;
+  .form__feedback .form__item {
+    width: 570px;
   }
 
-  .form__feedback .form__input_tel {
-    width: 472px;
-    background-position-x: 434px;
+  .form__item-icon_email {
+    top: 18px;
+    right: 18px;
+  }
+
+  .form__item-icon_tel {
+    top: 14px;
+    right: 16px;
   }
 
   .form__comment {
