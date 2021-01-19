@@ -79,33 +79,34 @@
 }
 
 .form__program {
-  padding-top: 22px;
-  padding-bottom: 18px;
+  padding-top: 18px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .form__program .form__item {
   position: relative;
-  padding: 6px 45px;
-}
-
-.form__program .form__item:not(:last-child) {
-  margin-bottom: 13px;
+  padding: 6px 0;
 }
 
 .form__program .form__input {
   display: none;
 }
 
-.form__program .form__label {
-  display: flex;
+.form__program .form__label,
+.form__extra .form__label {
+  display: grid;
+  grid-template-columns: 30px 1fr;
   align-items: center;
+}
+
+.form__program .form__label {
+  grid-column-gap: 15px;
 }
 
 .form__program .form__input + .form__label::before,
 .form__extra .form__input + .form__label::before {
   content: "";
-  position: absolute;
   width: 30px;
   height: 30px;
   border: 1px solid @grey-frame;
@@ -126,7 +127,7 @@
 .form__program .form__input:checked + .form__label::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 14px;
   left: 8px;
   padding: 7px;
   background-color: @green;
@@ -223,7 +224,7 @@
 }
 
 .form__extra .form__subtitle {
-  margin-bottom: 34px;
+  margin-bottom: 27px;
 }
 
 .form__extra .form__subtitle::after {
@@ -232,13 +233,14 @@
   width: 136px;
 }
 
+.form__extra-wrapper {
+  display: grid;
+  grid-row-gap: 12px;
+}
+
 .form__extra .form__item {
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.form__extra .form__item:not(:last-child) {
-  margin-bottom: 12px;
 }
 
 .form__extra .form__input {
@@ -246,9 +248,8 @@
 }
 
 .form__extra .form__label {
-  display: flex;
+  grid-column-gap: 16px;
   align-items: center;
-  margin-left: 45px;
 }
 
 .form__extra .form__input + .form__label::before {
@@ -297,7 +298,7 @@
 
   .form__client-data {
     padding-top: 32px;
-    padding-bottom: 50px;
+    padding-bottom: 54px;
   }
 
   .form__description,
@@ -334,17 +335,14 @@
     padding: 10px 18px 10px 18px;
   }
 
+  .form__program {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
   .form__program .form__fieldset {
-    padding: 20px 28px;
+    padding: 19px 28px;
     border: 1px solid @grey-form-border;
-  }
-
-  .form__program .form__item {
-    padding: 9px 60px;
-  }
-
-  .form__program .form__item:not(:last-child) {
-    margin-bottom: 5px;
   }
 
   .form__program .form__input + .form__label::before,
@@ -353,8 +351,17 @@
     height: 40px;
   }
 
+  .form__extra .form__label,
+  .form__program .form__label {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .form__program .form__label {
+    grid-column-gap: 20px;
+  }
+
   .form__program .form__input:checked + .form__label::after {
-    top: 15px;
+    top: 17px;
     left: 11px;
     padding: 9px;
   }
@@ -441,25 +448,18 @@
   }
 
   .form__extra-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 21px;
   }
 
   .form__extra-wrapper .form__item {
     width: 284px;
   }
 
-  .form__extra-wrapper .form__item:not(:nth-last-child(-n + 2)),
-  .form__extra-wrapper .form__item:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .form__extra-wrapper .form__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
-
   .form__extra .form__label {
+    grid-column-gap: 19px;
     margin-left: 0;
   }
 
@@ -578,7 +578,7 @@
 
   .form__comment {
     padding-top: 44px;
-    padding-bottom: 45px;
+    padding-bottom: 42px;
   }
 
   .form__comment .form__subtitle::after,
@@ -590,12 +590,17 @@
     width: 100%;
   }
 
-  .form__extra-wrapper .form__item {
-    width: 244px;
+  .form__extra .form__subtitle {
+    margin-bottom: 50px;
+  }
+
+  .form__extra-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 41px;
   }
 
   .form__submit {
-    padding-top: 18px;
+    padding-top: 38px;
     padding-bottom: 82px;
   }
 
