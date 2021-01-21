@@ -1,5 +1,5 @@
 .example {
-  background-color: @grey-background;
+  background-color: #eaeaea;
 }
 
 .example__wrapper {
@@ -20,7 +20,7 @@
 
 .example__text,
 .example__description {
-  color: @grey-text;
+  color: @dark-grey;
 }
 
 .example__list {
@@ -47,7 +47,7 @@
   width: 124px;
   margin: 0;
   padding: 15px 0;
-  border: 1px solid @grey-frame;
+  border: 1px solid @middle-basic-grey;
   border-radius: 3px;
   .font-params(24px, 24px);
   text-align: center;
@@ -61,7 +61,7 @@
   display: block;
   .centering(82px);
   margin-top: -9px;
-  background-color: @grey-background;
+  background-color: #eaeaea;
   .font-params(12px, 13px);
   font-family: @arial, sans-serif;
   text-align: center;
@@ -129,12 +129,15 @@
 
   .example__item_frameless {
     display: inline-block;
+    padding: 6px 0;
     text-align: end;
     width: 175px;
   }
 
   .example__case_frameless,
   .example__description_frameless {
+    display: block;
+    margin: 0;
     .font-params(20px, 20px);
     line-height: 1.5;
   }
@@ -145,7 +148,7 @@
     display: flex;
     justify-content: space-between;
     padding: 23px 110px 59px 110px;
-    background: linear-gradient(to top, @grey 462px, @white 50%);
+    background: linear-gradient(to top, @basic-grey 454px, @white 50%);
   }
 
   .example__wrapper {
@@ -165,11 +168,11 @@
   }
 
   .example__list-wrapper {
-    margin-bottom: 29px;
+    margin-bottom: 33px;
   }
 
   .example__description {
-    background-color: @grey;
+    background-color: @basic-grey;
   }
 
   .example__item_frameless {

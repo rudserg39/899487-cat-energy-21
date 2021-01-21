@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page page__index-background">
@@ -72,7 +74,7 @@
     <header class="header">
       <div class="header__wrapper ">
         <div class="header__logo-wrapper container container_medium container_extra-wide">
-          <div class="logo header__logo">
+          <div class="logo header__logo" tabindex="0">
             <picture class="header__picture">
               <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
               <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
@@ -91,11 +93,11 @@
             <span class="burger__line burger__line_fourth"></span>
           </div>
         </div>
-        <nav class="header__nav-panel header__nav-panel_close">
+        <nav class="header__nav-panel header__nav-panel_open">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header__nav-link header__nav-link_white header__nav-link_active-green header__nav-link_active-white" href="#">Главная</a></li>
-            <li class="header__nav-item"><a class="header__nav-link header__nav-link_white" href="catalog.html">Каталог продукции</a></li>
-            <li class="header__nav-item"><a class="header__nav-link header__nav-link_white" href="form.html">Подбор программы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link_white header__nav-link_index-active header__nav-link_active" href="#"><span class="header__nav-link-text">Главная</span></a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link_white" href="catalog.html"><span class="header__nav-link-text">Каталог продукции</span></a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link_white" href="form.html"><span class="header__nav-link-text">Подбор программы</span></a></li>
           </ul>
         </nav>
       </div>
@@ -134,9 +136,9 @@
                 <h3 class="program__title">Похудение</h3>
               </div>
               <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program__button button" href="#">
-                <span class="button__text">Каталог Slim</span>
-                <svg class="program__item-arrow-icon" width="24" height="12">
+              <a class="program__link" href="#">
+                <span class="program__link-text">Каталог Slim</span>
+                <svg class="program__link-arrow-icon" width="24" height="12">
                   <use xlink:href="#arrow-icon"></use>
                 </svg>
               </a>
@@ -149,9 +151,9 @@
                 <h3 class="program__title">Набор массы</h3>
               </div>
               <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program__button button" href="#">
-                <span class="button__text">Каталог Pro</span>
-                <svg class="program__item-arrow-icon" width="24" height="12">
+              <a class="program__link" href="#">
+                <span class="program__link-text">Каталог Pro</span>
+                <svg class="program__link-arrow-icon" width="24" height="12">
                   <use xlink:href="#arrow-icon"></use>
                 </svg>
               </a>
@@ -209,7 +211,7 @@
             <img class="slider__img" src="img/slider-before-mobile@1x.png" srcset="img/slider-before-mobile@2x.png 2x" alt="Изображение животного">
           </picture>
           <div class="slider__control">
-            <button class="slider__before">Было</button>
+            <span class="slider__before" tabindex="0">Было</span>
             <span class="slider__toggle-wrapper">
               <span class="slider__toggle">
                 <span class="slider__toggle-mark"></span>
@@ -217,12 +219,12 @@
             </span>
             <span class="slider__scale-wrapper">
               <span class="slider__scale">
-                <span class="slider__scale-mark">
+                <span class="slider__scale-mark" aria-label="Переключение слайдера" tabindex="0">
                   <span class="slider__scale-dot"></span>
                 </span>
               </span>
             </span>
-            <button class="slider__after">Стало</button>
+            <span class="slider__after" tabindex="0">Стало</span>
           </div>
         </div>
       </section>
@@ -230,13 +232,13 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <div class="contacts__text-wrapper container container_medium container_extra-wide">
+          <div class="contacts__text-wrapper contacts__text-wrapper_index container container_medium container_extra-wide">
             <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
             <address class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span class="contacts__description-city">Санкт-Петербург</span></address>
           </div>
         </div>
-        <div class="contacts__map-wrapper">
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A827e126bf99dd1b9af852869da8888e8b8c9473cabda338bf71e1d26f8260bed&amp;source=constructor" width="100%" height="100%"></iframe>
+        <div class="contacts__map-wrapper map">
+          <iframe class="contacts__map map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A827e126bf99dd1b9af852869da8888e8b8c9473cabda338bf71e1d26f8260bed&amp;source=constructor"></iframe>
         </div>
       </section>
     </main>
@@ -251,21 +253,21 @@
         <div class="social footer__social">
           <ul class="social__list">
             <li class="social__item social__item_vk">
-              <a class="social__link" href="#">Vk
+              <a class="social__link" href="#" aria-label="Перейти на страницу в контакте">Vk
                 <svg class="social__icon social__icon_vk" width="23" height="16">
                   <use xlink:href="#vk-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item social__item_instagram">
-              <a class="social__link" href="#">Instagram
+              <a class="social__link" href="#" aria-label="Перейти на страницу в инстаграм">Instagram
                 <svg class="social__icon social__icon_instagram" width="16" height="16">
                   <use xlink:href="#instagram-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item social__item_facebook">
-              <a class="social__link" href="#">Facebook
+              <a class="social__link" href="#" aria-label="Перейти на страницу в фейсбук">Facebook
                 <svg class="social__icon social__icon_facebook" width="22" height="22">
                   <use xlink:href="#facebook-icon"></use>
                 </svg>
@@ -275,7 +277,7 @@
         </div>
         <div class="developer footer__developer">
           <p class="developer__name">HTML Academy</p>
-          <a class="developer__link" href="#">
+          <a class="developer__link" href="#" aria-label="Переход на сайт HTML Academy">
             <svg width="27" height="34">
               <use xlink:href="#htmlacademy-icon"></use>
             </svg>

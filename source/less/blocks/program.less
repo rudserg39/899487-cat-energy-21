@@ -6,7 +6,7 @@
 .program__item {
   position: relative;
   padding: 20px;
-  background-color: @grey;
+  background-color: @basic-grey;
 }
 
 .program__item:not(:last-child) {
@@ -50,11 +50,11 @@
   padding: 0 0 22px 0;
   .font-params(14px, 18px);
   font-family: @arial, sans-serif;
-  border-bottom: 1px solid @grey-border;
-  color: @grey-text;
+  border-bottom: 1px solid #d8d8d8;
+  color: @dark-grey;
 }
 
-.program__button {
+.program__link {
   display: flex;
   align-items: center;
   .font-params(16px, 16px);
@@ -63,7 +63,12 @@
   color: @black;
 }
 
-.program__item-arrow-icon {
+.program__link:active .program__link-text,
+.program__link:active .program__link-arrow-icon {
+  opacity: 0.3;
+}
+
+.program__link-arrow-icon {
   margin-left: 15px;
 }
 
@@ -131,12 +136,12 @@
     width: 340px;
   }
 
-  .program__button {
+  .program__link {
     margin: 0;
     .font-params(20px, 29.6px);
   }
 
-  .program__item-arrow-icon {
+  .program__link-arrow-icon {
     margin-left: 24px;
   }
 }

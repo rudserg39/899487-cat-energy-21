@@ -6,7 +6,6 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('burger_active');
 });
 
-
 // Burger-menu
 
 const navPanel = document.querySelector('.header__nav-panel');
@@ -20,6 +19,7 @@ burger.addEventListener('click', () => {
     navPanel.classList.add('header__nav-panel_close');
   }
 });
+
 
 // Slider
 
