@@ -4,6 +4,7 @@
 
 .extra__title {
   position: relative;
+  .centering(320px);
   margin-top: 24px;
   margin-bottom: 11px;
   padding: 0 20px;
@@ -75,6 +76,7 @@
   }
 
   .extra__title {
+    .centering(768px);
     margin-bottom: 30px;
     padding: 0 66px;
     .font-params(36px, 36px);
@@ -99,13 +101,13 @@
   }
 
   .extra__item {
-    padding: 25.5px 37px;
+    padding: 26.5px 37px;
   }
 
   .extra__table {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .extra__caption {
@@ -115,7 +117,7 @@
 
   .extra__table-data {
     .font-params(16px, 20px);
-    font-family: @arial;
+    font-family: @arial, sans-serif;
   }
 
   .extra__table-data_price {
@@ -130,15 +132,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .centering(1440px);
     padding: 55px 110px 86px;
     padding-top: 55px;
   }
 
   .extra__wrapper {
+    width: 895px;
+    margin: 0;
     padding: 0;
   }
 
   .extra__title {
+    .centering(1440px);
     margin-bottom: 24px;
     padding-right: 110px;
     padding-left: 110px;

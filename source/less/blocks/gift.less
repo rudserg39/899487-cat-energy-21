@@ -4,8 +4,10 @@
 }
 
 .gift__wrapper {
+  width: 280px;
   height: 289px;
   background-image: url("/img/gift-background-mobile@1x.jpg");
+  background-color: @green;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/gift-background-mobile@2x.jpg");
@@ -45,6 +47,7 @@
   }
 
   .gift__wrapper {
+    width: 708px;
     height: 200px;
     background-image: url("/img/gift-background-tablet@1x.jpg");
 
@@ -81,12 +84,15 @@
 @media (min-width: @desktop-width) {
   .gift {
     display: inline-block;
+    width: 245px;
+    margin: 0;
     padding: 0;
   }
 
   .gift__wrapper {
     width: 245px;
     height: 289px;
+    margin: 0;
     padding: 0;
     background-image: url("/img/gift-background-desktop@1x.jpg");
 

@@ -1,9 +1,9 @@
 .catalog__wrapper {
   padding-top: 27px;
-  border-top: 1px solid #ebebeb;
 }
 
 .catalog__title {
+  .centering(320px);
   margin-top: 0;
   margin-bottom: 41px;
   .font-params(36px, 36px);
@@ -24,10 +24,11 @@
 .catalog__table-data,
 .catalog__subtitle-description {
   .font-params(12px, 14px);
-  font-family: @arial;
+  font-family: @arial, sans-serif;
 }
 
 .catalog__item {
+  .centering(320px);
   padding-top: 19px;
   padding-bottom: 24px;
   border-top: 1px solid #ebebeb;
@@ -41,7 +42,7 @@
   margin-bottom: 22px;
 }
 
-.catalog__img-wrapper {
+.catalog__link-img {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -58,8 +59,23 @@
 
 .catalog__table-caption {
   width: 80px;
+  height: 40px;
   margin-bottom: 11px;
   text-align: start;
+  overflow: hidden;
+}
+
+.catalog__link-title {
+  text-decoration: none;
+  color: @black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__table-row {
@@ -109,15 +125,13 @@
 
 @media (min-width: @tablet-width) {
   .catalog__wrapper {
-    padding-top: 34px;
-    padding-right: 30px;
-    padding-bottom: 44px;
-    padding-left: 30px;
-    border-top: none;
+    padding-top: 36px;
+    padding-bottom: 68px;
   }
 
   .catalog__title {
-    margin-bottom: 27px;
+    width: 708px;
+    margin-bottom: 23px;
     padding: 0;
     .font-params(60px, 60px);
   }
@@ -130,8 +144,11 @@
   }
 
   .catalog__item {
+    width: 324px;
     height: 431px;
-    margin-top: 139px;
+    margin-top: 140px;
+    margin-right: 0;
+    margin-left: 0;
     padding: 0;
     text-align: center;
     border-top: none;
@@ -142,7 +159,7 @@
     position: relative;
     flex-flow: column;
     width: 324px;
-    padding: 162px 37px 22px;
+    padding: 162px 37px 21px;
     margin-bottom: 0;
     text-align: center;
   }
@@ -163,8 +180,9 @@
 
   .catalog__table-caption {
     width: 150px;
+    height: 50px;
     margin: auto;
-    margin-bottom: 19px;
+    margin-bottom: 16px;
     .font-params(20px, 24px);
     text-align: center;
   }
@@ -217,18 +235,18 @@
 
 @media (min-width: @desktop-width) {
   .catalog__wrapper {
-    padding-top: 23px;
-    padding-right: 110px;
-    padding-bottom: 52px;
-    padding-left: 110px;
+    .centering(1440px);
+    padding: 19px 110px 74px;
   }
 
   .catalog__title {
-    margin-bottom: 23px;
+    width: 1220px;
+    margin-bottom: 16px;
   }
 
   .catalog__item {
-    margin-top: 142px;
+    width: 245px;
+    margin-top: 146px;
   }
 
   .catalog__item-wrapper {

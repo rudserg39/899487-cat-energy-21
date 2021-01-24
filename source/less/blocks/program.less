@@ -5,6 +5,7 @@
 
 .program__item {
   position: relative;
+  .centering(280px);
   padding: 20px;
   background-color: @basic-grey;
 }
@@ -46,12 +47,14 @@
 
 .program__text {
   width: 240px;
+  height: 112px;
   margin: 0 0 19px 0;
   padding: 0 0 22px 0;
   .font-params(14px, 18px);
   font-family: @arial, sans-serif;
   border-bottom: 1px solid #d8d8d8;
   color: @dark-grey;
+  overflow: hidden;
 }
 
 .program__link {
@@ -83,6 +86,9 @@
   }
 
   .program__item {
+    width: 708px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 75px 283px 60px 53px;
   }
 
@@ -121,6 +127,7 @@
   }
 
   .program__text {
+    height: 95px;
     margin-bottom: 51px;
     padding: 0;
     .font-params(16px, 24px);
@@ -202,6 +209,7 @@
   }
 
   .program__text {
+    height: 71px;
     margin-bottom: 27px;
   }
 

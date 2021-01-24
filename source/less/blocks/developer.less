@@ -5,15 +5,30 @@
 }
 
 .developer__name {
-  margin-top: 9px;
   .font-params(16px, 18.4px);
   font-family: @arial, sans-serif;
   color: @dark-grey;
+  text-decoration: none;
+}
+
+.developer__icon {
+  color: #666666;
+
+  &:hover {
+    color: @green;
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: @green;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .developer {
     width: 164px;
+    margin: 0;
     padding: 0;
   }
 
@@ -22,6 +37,14 @@
     margin-top: 0;
     .font-params(16px, 18px);
     font-family: @arial, sans-serif;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .developer__link {

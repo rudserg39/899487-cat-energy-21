@@ -1,22 +1,10 @@
 .page {
-  width: 320px;
-  margin: auto;
+  width: 100%;
   font-family: @oswald, @arial, sans-serif;
   .font-params(14px, 18px);
 }
 
-
-@media (min-width: @tablet-width) {
-  .page {
-    width: @tablet-width;
-  }
-}
-
 @media (min-width: @desktop-width) {
-  .page {
-    width: @desktop-width;
-  }
-
   .page__index-background::before {
     content: "";
     position: absolute;
@@ -31,7 +19,6 @@
     }
 
     background-repeat: no-repeat;
-    background-position-x: right;
     z-index: -1;
   }
 }

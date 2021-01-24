@@ -17,6 +17,20 @@
   font-size: 0;
 }
 
+.social__icon {
+  color: #666666;
+
+  &:hover {
+    color: @green;
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: @green;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .social {
     border: none;
@@ -26,23 +40,13 @@
     .centering(123px);
     width: 128px;
     margin: auto;
-    margin-left: 23px;
+    margin-left: 87px;
     padding: 0;
     border: none;
   }
 
   .social__item {
     line-height: 9px;
-  }
-
-  .social__icon {
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .social__icon_vk {

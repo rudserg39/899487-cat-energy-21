@@ -12,10 +12,7 @@
   padding-bottom: 27px;
   text-align: center;
   cursor: pointer;
-}
 
-.footer__logo,
-.footer__developer {
   &:hover {
     opacity: 0.8;
   }
@@ -26,11 +23,13 @@
 }
 
 .footer__social {
+  .centering(280px);
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
 }
 
 .footer__developer {
+  .centering(280px);
   padding-top: 19px;
   padding-bottom: 7px;
   cursor: pointer;
@@ -56,10 +55,11 @@
 
 @media (min-width: @desktop-width) {
   .footer__wrapper {
+    padding-top: 39px;
     padding-bottom: 28px;
   }
 
   .footer__logo {
-    padding-top: 33px;
+    padding-top: 28px;
   }
 }
