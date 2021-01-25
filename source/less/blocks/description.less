@@ -80,11 +80,19 @@
 
   .description__list .description__item {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 111px 121px;
+    grid-template-rows: 111px;
     align-items: unset;
     margin: 0;
     background-repeat: no-repeat;
     background-position-x: 125px;
+  }
+
+  .description__item {
+    min-height: 232px;
+
+    @media (min-resolution: 2dppx) {
+      background-size: contain;
+    }
   }
 
   .description__item::before {
