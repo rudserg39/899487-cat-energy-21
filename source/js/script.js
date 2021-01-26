@@ -2,7 +2,7 @@
 
 const burger = document.querySelector(".burger");
 
-burger.classList.remove('burger_invisible');
+burger.classList.remove("burger_invisible");
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("burger_active");
@@ -32,11 +32,11 @@ cons = toggleNavPanel = () => {
   }
 };
 
-burger.addEventListener('click', () => {
+burger.addEventListener("click", () => {
   toggleNavPanel();
 });
 
-burger.addEventListener('keydown', (evt) => {
+burger.addEventListener("keydown", (evt) => {
   if (evt.keyCode === 13) {
     toggleNavPanel();
   }
