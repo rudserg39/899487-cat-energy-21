@@ -58,9 +58,37 @@
 
 @media (min-width: @tablet-width) {
   .slider {
+    position: relative;
     padding-top: 25px;
     padding-bottom: 68px;
     background-color: unset;
+  }
+
+  .slider__img_before,
+  .slider__img_after,
+  .slider__control {
+    position: absolute;
+  }
+
+  .slider__img_before,
+  .slider__img_after {
+    overflow: hidden;
+  }
+
+  .slider__img_before {
+    left: 38px;
+    width: 324px;
+    z-index: 1;
+  }
+
+  .slider__img_after {
+    left: 90px;
+  }
+
+  .slider__control {
+    width: 572px;
+    bottom: 0;
+    left: 77px;
   }
 
   .slider__img {
@@ -72,10 +100,6 @@
     bottom: 69px;
     left: 98px;
     width: 584px;
-  }
-
-  .slider__control {
-    width: 572px;
   }
 
   .slider__before,
