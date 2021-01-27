@@ -115,8 +115,8 @@ scaleMark.addEventListener('mousedown', function (evt) {
       scaleMark.style.left = scaleMarkLineBoorders.RIGHT + 'px';
     }
 
-    sliderImgAfter.style.width = (scaleMark.offsetLeft / 100 - widthDifference) / scaleStep * 100 + '%';
     sliderImgBefore.style.width = 100 - (scaleMark.offsetLeft / 100) / scaleStep * 100 + '%';
+    sliderImgAfter.style.width = (scaleMark.offsetLeft / 100) / scaleStep * 100 - widthDifference + '%';
   };
 
   var mouseUpHandler = function (upEvt) {
